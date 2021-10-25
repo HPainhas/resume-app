@@ -1,13 +1,11 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import axios from 'axios';
-import config from '../../config/default.json';
 import Projects from '../layout/Projects';
 import resumeData from '../../assets/resume.json';
 
 const githubUsername = resumeData.githubUsername;
-const githubClientId = config.githubClientId || process.env.GITHUB_CLIENT_ID;
-const githubClientSecret =
-    config.githubClientSecret || process.env.GITHUB_CLIENT_SECRET;
+const githubClientId = process.env.GITHUB_CLIENT_ID;
+const githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
 
 const Portfolio = () => {
     const [repos, setRepos] = useState(null);
