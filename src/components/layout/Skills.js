@@ -5,7 +5,11 @@ const Skills = ({ skills }) => {
         <Fragment>
             {skills.map(skill => {
                 return (
-                    <div key={skill.name} className='progress-inner'>
+                    <div
+                        key={skill.name}
+                        className='progress-inner'
+                        data-aos='fade-up'
+                    >
                         <span>
                             <span className='label'>{skill.name}</span>
                             <span className='number'>{skill.value}%</span>

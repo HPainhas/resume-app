@@ -90,10 +90,10 @@ const Contact = () => {
                         </div>
                         <div id='talk' className='background'></div>
                         <div className='contact-inner'>
-                            <div className='text'>
+                            <div className='text' data-aos='zoom-in'>
                                 <h3>Let's connect!</h3>
                             </div>
-                            <div>
+                            <div data-aos='fade-up'>
                                 <SimpleModal buttonLabel='Contact Me'>
                                     <div className='contact-modal'>
                                         <h2>Get in touch</h2>

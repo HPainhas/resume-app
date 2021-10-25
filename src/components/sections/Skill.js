@@ -30,8 +30,8 @@ const Skill = () => {
                                             Android application I developed,
                                             which monitors all of our order
                                             processing workflow, inventory
-                                            system, receiving of goods, among
-                                            other activities.
+                                            system, and receiving of goods,
+                                            among other activities.
                                         </p>
                                     </div>
                                 </div>

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import resumeData from '../../assets/resume.json';
-import HenriqueProfilePic from '../../assets/Henrique_resume_picture.jpg';
+import HenriqueProfilePic from '../../assets/henrique.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/fontawesome-free-solid';
 
@@ -12,7 +12,7 @@ const About = () => {
                     <div className='about'>
                         <div className='container'>
                             <div className='about-inner'>
-                                <div className='left'>
+                                <div className='left' data-aos='fade-right'>
                                     <div className='image'>
                                         <img
                                             src={HenriqueProfilePic}
@@ -26,7 +26,7 @@ const About = () => {
                                         ></div>
                                     </div>
                                 </div>
-                                <div className='right'>
+                                <div className='right' data-aos='fade-up'>
                                     <div className='title'>
                                         <span>About Me</span>
                                         <h3>{resumeData.bioHeader}</h3>

@@ -33,7 +33,11 @@ const Projects = ({ repos }) => {
                         imageSrc = CountriesApp;
 
                     return (
-                        <div key={repository.id} className='row'>
+                        <div
+                            key={repository.id}
+                            className='row'
+                            data-aos='fade-right'
+                        >
                             <div className='column'>
                                 <a
                                     href={repository.html_url}

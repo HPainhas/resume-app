@@ -1076,6 +1076,11 @@ a.github {
         text-align: center;
     }
 
+    .about .right .text {
+        padding: 20px;
+        text-align: left;
+    }
+
     /* Portfolio Section */
     .portfolio {
         padding: 100px 0 80px;
@@ -1092,6 +1097,7 @@ a.github {
 
     .skills .skills-inner {
         flex-direction: column;
+        padding: 20px;
     }
 
     .skills .left {
@@ -1103,6 +1109,10 @@ a.github {
     .skills .right {
         padding-left: 0;
         width: 100%;
+    }
+
+    .skills .right .skill-progress {
+        padding-top: 40px;
     }
 
     /* Resume Section */

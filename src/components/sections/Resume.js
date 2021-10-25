@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import resumeData from '../../assets/resume.json';
+import Tooltip from '@mui/material/Tooltip';
 import {
     SiPerl,
     SiJava,
@@ -12,6 +12,7 @@ import {
 } from 'react-icons/si';
 import { DiAndroid } from 'react-icons/di';
 import { BiCodeAlt } from 'react-icons/bi';
+import resumeData from '../../assets/resume.json';
 
 const Resume = () => {
     return (
@@ -88,8 +89,7 @@ const Resume = () => {
                                                         Co-Founder
                                                         <span>•</span>
                                                         <em className='date'>
-                                                            January 2020 -
-                                                            December 2020
+                                                            Jan 2020 - Dec 2020
                                                         </em>
                                                     </p>
                                                     <p className='job-info'>
@@ -240,7 +240,7 @@ const Resume = () => {
                                                                 case 'JavaScript':
                                                                     icon = (
                                                                         <SiJavascript
-                                                                            size='2rem'
+                                                                            size='3rem'
                                                                             color={
                                                                                 skill.color
                                                                             }
@@ -250,7 +250,7 @@ const Resume = () => {
                                                                 case 'Java':
                                                                     icon = (
                                                                         <SiJava
-                                                                            size='2rem'
+                                                                            size='3rem'
                                                                             color={
                                                                                 skill.color
                                                                             }
@@ -260,7 +260,7 @@ const Resume = () => {
                                                                 case 'Perl':
                                                                     icon = (
                                                                         <SiPerl
-                                                                            size='2rem'
+                                                                            size='3rem'
                                                                             color={
                                                                                 skill.color
                                                                             }
@@ -270,7 +270,7 @@ const Resume = () => {
                                                                 case 'SQL':
                                                                     icon = (
                                                                         <SiMysql
-                                                                            size='2rem'
+                                                                            size='3rem'
                                                                             color={
                                                                                 skill.color
                                                                             }
@@ -280,7 +280,7 @@ const Resume = () => {
                                                                 case 'Android':
                                                                     icon = (
                                                                         <DiAndroid
-                                                                            size='2rem'
+                                                                            size='3rem'
                                                                             color={
                                                                                 skill.color
                                                                             }
@@ -290,7 +290,7 @@ const Resume = () => {
                                                                 case 'React':
                                                                     icon = (
                                                                         <SiReact
-                                                                            size='2rem'
+                                                                            size='3rem'
                                                                             color={
                                                                                 skill.color
                                                                             }
@@ -300,7 +300,7 @@ const Resume = () => {
                                                                 case 'Redux':
                                                                     icon = (
                                                                         <SiRedux
-                                                                            size='2rem'
+                                                                            size='3rem'
                                                                             color={
                                                                                 skill.color
                                                                             }
@@ -310,7 +310,7 @@ const Resume = () => {
                                                                 case 'Git':
                                                                     icon = (
                                                                         <SiGit
-                                                                            size='2rem'
+                                                                            size='3rem'
                                                                             color={
                                                                                 skill.color
                                                                             }
@@ -320,7 +320,7 @@ const Resume = () => {
                                                                 case 'Firebase':
                                                                     icon = (
                                                                         <SiFirebase
-                                                                            size='2rem'
+                                                                            size='3rem'
                                                                             color={
                                                                                 skill.color
                                                                             }
@@ -330,7 +330,7 @@ const Resume = () => {
                                                                 default:
                                                                     icon = (
                                                                         <BiCodeAlt
-                                                                            size='2rem'
+                                                                            size='3rem'
                                                                             color={
                                                                                 skill.color
                                                                             }
@@ -345,13 +345,19 @@ const Resume = () => {
                                                                         skill.name
                                                                     }
                                                                     className='tech-skill'
+                                                                    data-aos='zoom-in'
                                                                 >
-                                                                    {icon}
-                                                                    <p>
-                                                                        {
+                                                                    <Tooltip
+                                                                        title={
                                                                             skill.name
                                                                         }
-                                                                    </p>
+                                                                    >
+                                                                        <div>
+                                                                            {
+                                                                                icon
+                                                                            }
+                                                                        </div>
+                                                                    </Tooltip>
                                                                 </div>
                                                             );
                                                         }
