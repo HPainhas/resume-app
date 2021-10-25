@@ -40,7 +40,11 @@ const Contact = () => {
                 break;
             case 'linkedin':
                 icon = (
-                    <a href={info.url} target='_blank' rel='noreferrer'>
+                    <a
+                        href={info.url}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
                         <FaLinkedin
                             className='svg'
                             size='2rem'
@@ -51,7 +55,11 @@ const Contact = () => {
                 break;
             case 'github':
                 icon = (
-                    <a href={info.url} target='_blank' rel='noreferrer'>
+                    <a
+                        href={info.url}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
                         <SiGithub className='svg' size='2rem' color={'white'} />
                     </a>
                 );
