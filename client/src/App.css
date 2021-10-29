@@ -1193,6 +1193,11 @@ a.github {
     }
 
     /* Contact Section */
+    .contact .contact-inner {
+        flex-direction: column;
+        padding: 20px;
+    }
+
     .contact .text h3 {
         font-size: 50px;
         line-height: 1.2;

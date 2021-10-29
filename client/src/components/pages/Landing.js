@@ -8,10 +8,10 @@ import resumeData from '../../assets/resume.json';
 import TextTransition, { presets } from 'react-text-transition';
 
 const positions = [
-    'Software Engineer.',
-    'Android Developer.',
-    'Web Developer.',
-    'Curious.',
+    'Software Engineer',
+    'Android Developer',
+    'Web Developer',
+    'Full-Stack.',
 ];
 
 const Landing = () => {
