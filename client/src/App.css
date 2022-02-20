@@ -780,6 +780,13 @@ img {
     font-size: 25px;
 }
 
+.resume .job-location {
+    font-size: 16px;
+    font-style: italic;
+    color: #6e7881;
+    margin-top: 9px;
+}
+
 .resume .job-title {
     font-size: 16px;
     font-style: italic;
@@ -1156,6 +1163,7 @@ a.github {
     }
 
     .resume .degree,
+    .resume .job-location,
     .resume .job-title,
     .resume .job-title-mobile {
         text-align: center;

@@ -44,6 +44,9 @@ const Resume = () => {
                                             <div className='twelve columns'>
                                                 <div>
                                                     <h3>{TOAST_JOB.name}</h3>
+                                                    <p className='job-location'>
+                                                        {TOAST_JOB.location}
+                                                    </p>
                                                     <p className='job-title'>
                                                         {TOAST_JOB.position}
                                                         <span>•</span>
@@ -61,6 +64,11 @@ const Resume = () => {
                                                     <h3>
                                                         {ERETAILING_JOB.name}
                                                     </h3>
+                                                    <p className='job-location'>
+                                                        {
+                                                            ERETAILING_JOB.location
+                                                        }
+                                                    </p>
                                                     <p className='job-title'>
                                                         {
                                                             ERETAILING_JOB.position
@@ -92,6 +100,9 @@ const Resume = () => {
                                                         </h3>
                                                         <span>(startup)</span>
                                                     </div>
+                                                    <p className='job-location'>
+                                                        {VYRA_JOB.location}
+                                                    </p>
                                                     <p className='job-title'>
                                                         {VYRA_JOB.position}
                                                         <span>•</span>
