@@ -840,16 +840,6 @@ img {
     margin-left: 5px;
 }
 
-.resume .focus {
-    font-size: 16px;
-    color: #6e7881;
-    margin-top: 9px;
-}
-
-.resume .focus span {
-    margin-left: 5px;
-}
-
 .resume .gpa {
     font-size: 16px;
     color: #6e7881;
@@ -1184,7 +1174,6 @@ a.github {
         padding-top: 20px;
     }
 
-    .resume .focus,
     .resume .deans,
     .resume .gpa {
         margin-top: 0;
@@ -1212,6 +1201,14 @@ a.github {
 }
 
 @media only screen and (max-width: 900px) {
+    h3 {
+        font-size: 20px;
+    }
+
+    .resume h3 {
+        font-size: 20px;
+    }
+
     /* About Section */
     .about {
         padding: 60px 0;
@@ -1254,6 +1251,13 @@ a.github {
 
     /* Footer */
     .social-container {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Contact Section */
+    .contact-modal .contact-info > ul > li p {
         font-size: 12px;
     }
 }

@@ -1,6 +1,8 @@
 {
-    "bioHeader": "Software Engineer based in Columbus, OH",
+    "name": "Henrique Painhas",
+    "bioHeader": "Software Engineer working remotely",
     "bio": "I am an experienced Software Engineer and Android Developer, with previous experience as an athlete, and have a passion for innovation and a strong drive for continuous improvement in all of my endeavors. I am currently reading the book Clean Code by Robert C. Martin and I'm looking forward to applying what I have learned so far on my next projects.",
+    "skills_bio": "Currently, I'm working as a Software Engineer at Toast, Inc., soaking up as much knowledge and practice as I can in an attempt to get better at my role and advance in my career. I'm a member of the Payments Workflow team and I'm responsible for implementing new features, updating existing payment functionalities, and fixing bugs within the Toast point of sale (POS) application.",
     "contact": [
         {
             "type": "email",
@@ -9,10 +11,6 @@
         {
             "type": "location",
             "value": "Columbus, OH - USA"
-        },
-        {
-            "type": "phone",
-            "value": "+1 (614) 301-8600"
         },
         {
             "type": "linkedin",
@@ -44,16 +42,15 @@
         "state": "OH",
         "country": "United States",
         "gpa": "3.28",
-        "major": "Computer and Information Sciences",
-        "start_date": "August 2015",
-        "end_date": "May 2020"
+        "deans_list": "5 semesters",
+        "major": "B.S. in Computer and Information Sciences",
+        "graduation_date": "May 2020"
     },
     "workExperience": [
         {
             "name": "Toast Inc.",
-            "position": "Software Engineer I",
-            "city": "(Remote)Columbus",
-            "state": "OH",
+            "position": "Software Engineer",
+            "location": "(Remote) Columbus, OH",
             "country": "United States",
             "start_end_date": "December 2021 - Present",
             "description": "Member of the Payments Workflow team. Responsible for implementing new features, updating existing payment functionalities, and fixing bugs within the Toast point of sale (POS) application."
@@ -61,20 +58,18 @@
         {
             "name": "eRetailing Associates",
             "position": "Software Engineer",
-            "city": "Columbus",
-            "state": "OH",
+            "location": "Columbus, OH",
             "country": "United States",
             "start_end_date": "May 2019 - December 2021",
-            "description": "Member of the e-commerce team which focuses on making the production team as efficient as possible in order to increase order throughput and inventory accuracy./n/nDesigned and implemented an Android application for the Zebra MC40 scanners. The FacilityApp mainly monitors all of our order processing workflow, handles inventory accuracy, and allows the production team to track and locate items with ease. The use of the FacilityApp made it easier for eRetailing to partner with Homage by streamlining the data between both companies and allowing our production team to handle the increase in workload. Therefore, helping increase the company's revenue."
+            "description": "Member of the e-commerce team which focuses on making the production team as efficient as possible in order to increase order throughput and inventory accuracy. Designed and implemented an Android application for the Zebra MC40 scanners. The FacilityApp mainly monitors all of the order processing workflow, handles inventory accuracy, and allows the production team to track and locate items with ease. The use of the FacilityApp made it easier for eRetailing to partner with Homage by streamlining the data between both companies and allowing the production team to handle the increase in workload, helping increase the company's revenue."
         },
         {
             "name": "Vyra",
-            "position": "Co-Founder / CTO",
-            "city": "Columbus",
-            "state": "OH",
+            "position": "Co-Founder, CTO",
+            "location": "Columbus, OH",
             "country": "United States",
             "start_end_date": "January 2020 - December 2020",
-            "description": "My friends and I attempted to innovate the interviewing process for software engineers. We used React JS for the front-end and Node JS, Express, MySQL, and AWS for the back-end to build a web application that allowed interviewers and interviewees to have a more realistic interview experience. The application included a built-in calendar, dashboard, candidate management tools (favorites, position, etc.), real-time screen share, real-time note-taking, among other features."
+            "description": "Let’s face it. Typical coding challenges and white board questions just aren’t cutting it anymore. We need tools that allow companies to assess candidates on skills that matter. Introducing Vyra. My two friends and I attempted building a startup that would allow tech companies to interview candidates through real work scenarios. The platform included a built-in calendar, dashboard, candidate management tools, real time screen sharing, real time note taking, among other features."
         }
     ],
     "technicalProjects": [
@@ -98,29 +93,29 @@
     "developmentSkills": [
         {
             "name": "Android Development",
-            "value": 90,
-            "icon": "faAndroid"
+            "value": 90
         },
         {
             "name": "Website Development",
-            "value": 75,
-            "icon": "faCode"
+            "value": 80
         },
         {
             "name": "REST API Design",
-            "value": 85,
-            "icon": "faServer"
+            "value": 85
+        },
+        {
+            "name": "Scrum",
+            "value": 85
         },
         {
             "name": "SQL",
-            "value": 85,
-            "icon": "faDatabase"
+            "value": 85
         }
     ],
     "technicalSkills": [
         {
-            "name": "JavaScript",
-            "color": "#F7DF1E"
+            "name": "Android",
+            "color": "#9FC037"
         },
         {
             "name": "Kotlin",
@@ -131,16 +126,16 @@
             "color": "Orange"
         },
         {
-            "name": "Perl",
-            "color": "#41446D"
+            "name": "Jira",
+            "color": "#0D64DA"
+        },
+        {
+            "name": "JavaScript",
+            "color": "#F7DF1E"
         },
         {
             "name": "SQL",
             "color": "#4479A1"
-        },
-        {
-            "name": "Android",
-            "color": "#9FC037"
         },
         {
             "name": "React",
@@ -151,8 +146,16 @@
             "color": "#F05033"
         },
         {
-            "name": "Jira",
-            "color": "#0D64DA"
+            "name": "HTML5",
+            "color": "#E96228"
+        },
+        {
+            "name": "CSS",
+            "color": "#2861EE"
+        },
+        {
+            "name": "Perl",
+            "color": "#41446D"
         }
     ],
     "intercollegiateAthletics": {
@@ -163,14 +166,12 @@
             "Placed 6 th in the 100m Butterfly at 2015 FINA World Junior Swimming Championships"
         ]
     },
-    "leadershipActivities": [
-        {
-            "name": "Design, Develop, Deploy Organization (D3)",
-            "location": "The Ohio State University",
-            "city": "Columbus",
-            "state": "OH",
-            "date": "Fall 2019",
-            "description": "Collaboratively worked on a team to develop a platform that will change the way technical interviews work in the tech world."
-        }
-    ]
+    "leadership": {
+        "name": "Design, Develop, Deploy Organization (D3)",
+        "location": "The Ohio State University",
+        "city": "Columbus",
+        "state": "OH",
+        "date": "Fall 2019",
+        "description": "Collaboratively worked on a team to develop a platform that would change the way technical interviews work in the tech world."
+    }
 }
