@@ -492,7 +492,6 @@ img {
     position: relative;
     overflow: hidden;
     font-size: 72px;
-    font-family: 'Montserrat';
     text-transform: uppercase;
     font-weight: 900;
     display: inline-block;
@@ -511,7 +510,6 @@ img {
 .landing-inner .content .location {
     font-weight: 700;
     font-size: 35px;
-    font-family: 'Montserrat';
     color: #fff;
     padding: 0px 0 10px;
 }
@@ -707,7 +705,6 @@ img {
 
 .progress-inner .background .bar-progress {
     height: 100%;
-    background: #000;
     width: 0;
     overflow: hidden;
 }
@@ -782,6 +779,13 @@ img {
     font-size: 25px;
 }
 
+.resume .job-location {
+    font-size: 16px;
+    font-style: italic;
+    color: #6e7881;
+    margin-top: 9px;
+}
+
 .resume .job-title {
     font-size: 16px;
     font-style: italic;
@@ -839,16 +843,6 @@ img {
 }
 
 .resume .deans span {
-    margin-left: 5px;
-}
-
-.resume .focus {
-    font-size: 16px;
-    color: #6e7881;
-    margin-top: 9px;
-}
-
-.resume .focus span {
     margin-left: 5px;
 }
 
@@ -1168,6 +1162,7 @@ a.github {
     }
 
     .resume .degree,
+    .resume .job-location,
     .resume .job-title,
     .resume .job-title-mobile {
         text-align: center;
@@ -1186,7 +1181,6 @@ a.github {
         padding-top: 20px;
     }
 
-    .resume .focus,
     .resume .deans,
     .resume .gpa {
         margin-top: 0;
@@ -1214,6 +1208,14 @@ a.github {
 }
 
 @media only screen and (max-width: 900px) {
+    h3 {
+        font-size: 20px;
+    }
+
+    .resume h3 {
+        font-size: 20px;
+    }
+
     /* About Section */
     .about {
         padding: 60px 0;
@@ -1257,5 +1259,21 @@ a.github {
     /* Footer */
     .social-container {
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    /* Contact Section */
+    .contact-modal .contact-info > ul > li p {
+        font-size: 12px;
+    }
+
+    /* Resume Section */
+    .resume .job-title span {
+        display: none;
+    }
+
+    .resume .job-title .date {
+        display: block;
     }
 }

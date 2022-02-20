@@ -6,13 +6,21 @@ import {
     SiJavascript,
     SiMysql,
     SiReact,
-    SiRedux,
+    SiKotlin,
     SiGit,
-    SiFirebase,
+    SiJira,
+    SiHtml5,
+    SiCss3,
 } from 'react-icons/si';
 import { DiAndroid } from 'react-icons/di';
 import { BiCodeAlt } from 'react-icons/bi';
 import resumeData from '../../assets/resume.json';
+
+const EDUCATION = resumeData.education;
+const LEADERSHIP = resumeData.leadership;
+const TOAST_JOB = resumeData.workExperience[0];
+const ERETAILING_JOB = resumeData.workExperience[1];
+const VYRA_JOB = resumeData.workExperience[2];
 
 const Resume = () => {
     return (
@@ -35,38 +43,47 @@ const Resume = () => {
                                         <div className='row item'>
                                             <div className='twelve columns'>
                                                 <div>
-                                                    <h3>
-                                                        eRetailing Associates
-                                                    </h3>
+                                                    <h3>{TOAST_JOB.name}</h3>
+                                                    <p className='job-location'>
+                                                        {TOAST_JOB.location}
+                                                    </p>
                                                     <p className='job-title'>
-                                                        Software Engineer
+                                                        {TOAST_JOB.position}
                                                         <span>•</span>
                                                         <em className='date'>
-                                                            May 2019 - Present
+                                                            {
+                                                                TOAST_JOB.start_end_date
+                                                            }
                                                         </em>
                                                     </p>
                                                     <p className='job-info'>
-                                                        My tasks on the
-                                                        e-commerce team include:
-                                                        continue to improve the
-                                                        in-house Android
-                                                        application I developed
-                                                        which monitors all of
-                                                        our order processing
-                                                        workflow, handles the
-                                                        inventory system
-                                                        accuracy, and allows the
-                                                        production team to
-                                                        receive inbound goods
-                                                        efficiently; writing
-                                                        software to enhance our
-                                                        inventory management
-                                                        system and handle
-                                                        errors; help with the
-                                                        design of the new
-                                                        warehouse labeling
-                                                        system; among other
-                                                        tasks.
+                                                        {TOAST_JOB.description}
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <h3>
+                                                        {ERETAILING_JOB.name}
+                                                    </h3>
+                                                    <p className='job-location'>
+                                                        {
+                                                            ERETAILING_JOB.location
+                                                        }
+                                                    </p>
+                                                    <p className='job-title'>
+                                                        {
+                                                            ERETAILING_JOB.position
+                                                        }
+                                                        <span>•</span>
+                                                        <em className='date'>
+                                                            {
+                                                                ERETAILING_JOB.start_end_date
+                                                            }
+                                                        </em>
+                                                    </p>
+                                                    <p className='job-info'>
+                                                        {
+                                                            ERETAILING_JOB.description
+                                                        }
                                                     </p>
                                                 </div>
                                                 <div>
@@ -79,42 +96,24 @@ const Resume = () => {
                                                                     '10px',
                                                             }}
                                                         >
-                                                            Vyra
+                                                            {VYRA_JOB.name}
                                                         </h3>
-                                                        <span>
-                                                            (tentative startup)
-                                                        </span>
+                                                        <span>(startup)</span>
                                                     </div>
+                                                    <p className='job-location'>
+                                                        {VYRA_JOB.location}
+                                                    </p>
                                                     <p className='job-title'>
-                                                        Co-Founder
+                                                        {VYRA_JOB.position}
                                                         <span>•</span>
                                                         <em className='date'>
-                                                            Jan 2020 - Dec 2020
+                                                            {
+                                                                VYRA_JOB.start_end_date
+                                                            }
                                                         </em>
                                                     </p>
                                                     <p className='job-info'>
-                                                        Let’s face it. Typical
-                                                        coding challenges and
-                                                        white board questions
-                                                        just aren’t cutting it
-                                                        anymore. We need tools
-                                                        that allow companies to
-                                                        assess candidates on
-                                                        skills that matter.
-                                                        Introducing Vyra. My two
-                                                        friends and I tried to
-                                                        build a startup that
-                                                        would allow tech
-                                                        companies to interview
-                                                        candidates through real
-                                                        work scenarios. The
-                                                        platform included a
-                                                        built-in calendar,
-                                                        dashboard, candidate
-                                                        management tools, real
-                                                        time screen sharing,
-                                                        real time note taking,
-                                                        among other features.
+                                                        {VYRA_JOB.description}
                                                     </p>
                                                 </div>
                                             </div>
@@ -131,16 +130,14 @@ const Resume = () => {
                                         <div className='row item'>
                                             <div className='twelve columns'>
                                                 <div>
-                                                    <h3>
-                                                        The Ohio State
-                                                        University
-                                                    </h3>
+                                                    <h3>{EDUCATION.college}</h3>
                                                     <p className='degree'>
-                                                        B.S. in Computer and
-                                                        Information Sciences
+                                                        {EDUCATION.major}
                                                         <span>•</span>
                                                         <em className='date'>
-                                                            May 2020
+                                                            {
+                                                                EDUCATION.graduation_date
+                                                            }
                                                         </em>
                                                     </p>
                                                     <div className='degree-info-mobile'>
@@ -152,31 +149,21 @@ const Resume = () => {
                                                                     fontWeight: 600,
                                                                 }}
                                                             >
-                                                                3.28
-                                                            </span>
-                                                        </p>
-                                                        <p className='focus'>
-                                                            Focus
-                                                            <span>:</span>
-                                                            <span
-                                                                style={{
-                                                                    fontWeight: 600,
-                                                                }}
-                                                            >
-                                                                Software
-                                                                Engineering
+                                                                {EDUCATION.gpa}
                                                             </span>
                                                         </p>
                                                         <p className='deans'>
-                                                            Member of the Dean's
-                                                            List
+                                                            Dean's List (&gt;=
+                                                            3.5 GPA)
                                                             <span>:</span>
                                                             <span
                                                                 style={{
                                                                     fontWeight: 600,
                                                                 }}
                                                             >
-                                                                5 semesters
+                                                                {
+                                                                    EDUCATION.deans_list
+                                                                }
                                                             </span>
                                                         </p>
                                                     </div>
@@ -195,25 +182,16 @@ const Resume = () => {
                                         <div className='row item'>
                                             <div className='twelve columns'>
                                                 <div>
-                                                    <h3>
-                                                        Design, Develop, Deploy
-                                                        Organization (D3)
-                                                    </h3>
+                                                    <h3>{LEADERSHIP.name}</h3>
                                                     <p className='job-title'>
-                                                        The Ohio State
-                                                        University
+                                                        {LEADERSHIP.location}
                                                         <span>•</span>
                                                         <em className='date'>
-                                                            Fall 2019
+                                                            {LEADERSHIP.date}
                                                         </em>
                                                     </p>
                                                     <p className='job-info'>
-                                                        Collaboratively worked
-                                                        on a team to develop a
-                                                        platform that will
-                                                        change the way technical
-                                                        interviews work in the
-                                                        tech world.
+                                                        {LEADERSHIP.description}
                                                     </p>
                                                 </div>
                                             </div>
@@ -267,6 +245,26 @@ const Resume = () => {
                                                                         />
                                                                     );
                                                                     break;
+                                                                case 'HTML5':
+                                                                    icon = (
+                                                                        <SiHtml5
+                                                                            size='3rem'
+                                                                            color={
+                                                                                skill.color
+                                                                            }
+                                                                        />
+                                                                    );
+                                                                    break;
+                                                                case 'CSS':
+                                                                    icon = (
+                                                                        <SiCss3
+                                                                            size='3rem'
+                                                                            color={
+                                                                                skill.color
+                                                                            }
+                                                                        />
+                                                                    );
+                                                                    break;
                                                                 case 'SQL':
                                                                     icon = (
                                                                         <SiMysql
@@ -297,9 +295,9 @@ const Resume = () => {
                                                                         />
                                                                     );
                                                                     break;
-                                                                case 'Redux':
+                                                                case 'Jira':
                                                                     icon = (
-                                                                        <SiRedux
+                                                                        <SiJira
                                                                             size='3rem'
                                                                             color={
                                                                                 skill.color
@@ -317,9 +315,9 @@ const Resume = () => {
                                                                         />
                                                                     );
                                                                     break;
-                                                                case 'Firebase':
+                                                                case 'Kotlin':
                                                                     icon = (
-                                                                        <SiFirebase
+                                                                        <SiKotlin
                                                                             size='3rem'
                                                                             color={
                                                                                 skill.color

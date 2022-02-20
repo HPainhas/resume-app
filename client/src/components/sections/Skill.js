@@ -13,26 +13,12 @@ const Skill = () => {
                                 <div className='left'>
                                     <div className='title'>
                                         <h3>
-                                            I have high skills in developing and
-                                            programming
+                                            I have high skills in programming
+                                            and solving problems
                                         </h3>
                                     </div>
                                     <div className='text'>
-                                        <p>
-                                            Currently, I'm working as a Software
-                                            Engineer at eRetailing Associates,
-                                            soaking up as much knowledge and
-                                            practice as I can in an attempt to
-                                            get better at my role and advance in
-                                            my career. My main task on the
-                                            e-commerce team is to continue to
-                                            improve and maintain the in-house
-                                            Android application I developed,
-                                            which monitors all of our order
-                                            processing workflow, inventory
-                                            system, and receiving of goods,
-                                            among other activities.
-                                        </p>
+                                        <p>{resumeData.skills_bio}</p>
                                     </div>
                                 </div>
                                 <div className='right'>

@@ -1,6 +1,8 @@
 {
-    "bioHeader": "Software Engineer based in Columbus, OH",
-    "bio": "I am an experienced Software Engineer and Android Developer, with previous experience as an athlete, and have a passion for innovation and a strong drive for continuous improvement in all of my endeavors. I have recently finished a course on data structure and algorithms and another on Android development, and I'm looking forward to applying what I have learned so far on my next projects.",
+    "name": "Henrique Painhas",
+    "bioHeader": "Software Engineer working remotely",
+    "bio": "I am an experienced Software Engineer and Android Developer, with previous experience as an athlete, and have a passion for innovation and a strong drive for continuous improvement in all of my endeavors. I am currently reading the book Clean Code by Robert C. Martin and I'm looking forward to applying what I have learned so far on my next projects.",
+    "skills_bio": "Currently, I'm working as a Software Engineer at Toast, Inc., soaking up as much knowledge and practice as I can in an attempt to get better at my role and advance in my career. I'm a member of the Payments Workflow team and I'm responsible for implementing new features, updating existing payment functionalities, and fixing bugs within the Toast point of sale (POS) application.",
     "contact": [
         {
             "type": "email",
@@ -9,10 +11,6 @@
         {
             "type": "location",
             "value": "Columbus, OH - USA"
-        },
-        {
-            "type": "phone",
-            "value": "+1 (614) 301-8600"
         },
         {
             "type": "linkedin",
@@ -44,49 +42,48 @@
         "state": "OH",
         "country": "United States",
         "gpa": "3.28",
-        "major": "Computer and Information Sciences",
-        "start_date": "August 2015",
-        "end_date": "May 2020"
+        "deans_list": "5 semesters",
+        "major": "B.S. in Computer and Information Sciences",
+        "graduation_date": "May 2020"
     },
     "workExperience": [
         {
-            "name": "eRetailing Associates",
-            "position": "Software Engineer / Android Engineer",
-            "city": "Columbus",
-            "state": "OH",
+            "name": "Toast Inc.",
+            "position": "Software Engineer",
+            "location": "(Remote) Columbus, OH",
             "country": "United States",
-            "start_date": "May 2019",
-            "end_date": "",
-            "description": [
-                "Designed and developed an in-house Android application for the Zebra MC40 scanners using Java and Android Studio for the front-end, and Perl, SQL, and Firebase for the backend. The application uses different web transactions to help the production team with warehouse management tasks. These tasks involve: assign, locate, identify, pick, put away, receive, transfer, print, among others. The goal is to make the warehouse become paperless, the order workflow more efficient, and inventory 100% accurate.",
-                "Communicated directly with employees to gather requirements and to get feedback from the application, as well as their desired additional functionalities."
-            ]
+            "start_end_date": "December 2021 - Present",
+            "description": "Member of the Payments Workflow team. Responsible for implementing new features, updating existing payment functionalities, and fixing bugs within the Toast point of sale (POS) application."
+        },
+        {
+            "name": "eRetailing Associates",
+            "position": "Software Engineer",
+            "location": "Columbus, OH",
+            "country": "United States",
+            "start_end_date": "May 2019 - December 2021",
+            "description": "Member of the e-commerce team which focuses on making the production team as efficient as possible in order to increase order throughput and inventory accuracy. Designed and implemented an Android application for the Zebra MC40 scanners. The FacilityApp mainly monitors all of the order processing workflow, handles inventory accuracy, and allows the production team to track and locate items with ease. The use of the FacilityApp made it easier for eRetailing to partner with Homage by streamlining the data between both companies and allowing the production team to handle the increase in workload, helping increase the company's revenue."
         },
         {
             "name": "Vyra",
-            "position": "Co-Founder / CTO",
-            "city": "Columbus",
-            "state": "OH",
+            "position": "Co-Founder and CTO",
+            "location": "Columbus, OH",
             "country": "United States",
-            "start_date": "January 2020",
-            "end_date": "Decembet 2020",
-            "description": [
-                "My friends and I attempted to innovate the interviewing process for software engineers. We used React JS for the front-end and Node JS, Express, MySQL, and AWS for the back-end to build a web application that allowed interviewers and interviewees to have a more realistic interview experience. The application included a built-in calendar, dashboard, candidate management tools (favorites, position, etc.), real-time screen share, real-time note-taking, among other features."
-            ]
+            "start_end_date": "January 2020 - December 2020",
+            "description": "Let’s face it. Typical coding challenges and white board questions just aren’t cutting it anymore. We need tools that allow companies to assess candidates on skills that matter. Introducing Vyra. My two friends and I attempted building a startup that would allow tech companies to interview candidates through real work scenarios. The platform included a built-in calendar, dashboard, candidate management tools, real time screen sharing, real time note taking, among other features."
         }
     ],
     "technicalProjects": [
         {
             "name": "Countries App",
-            "description": "Basic Android application that covers all the modern Android development patterns in Java. This includes: MVVM architecture, Lifecycle Extensions, Dagger2, RxJava, Retrofit, Glide, and some simple Unit Testing."
+            "description": "Basic Android application that covers all the modern Android development patterns in Java. This includes: MVVM architecture, Lifecycle Extensions, Dagger2, RxJava, Retrofit, Glide, and some unit testing."
         },
         {
-            "name": "DevConnector",
-            "description": "An in-depth full-stack social network application for developers. The tech stack I used includes Node.js, Express, React, Redux, and MongoDB along with ES6+."
+            "name": "DevSocializa",
+            "description": "An in-depth full-stack social network application for developers. The tech stack includes Node.js, Express, React, Redux, and MongoDB along with ES6+."
         },
         {
             "name": "Pokemon App",
-            "description": "Very very simple React Pokemon application using the latest features of React. It utilizes hooks for state and effects instead of classes, and also basic pagination."
+            "description": "Very simple React Pokemon application using the latest features of React. It utilizes hooks for state and effects instead of classes, and also basic pagination."
         },
         {
             "name": "Homeowner Buddy",
@@ -97,60 +94,73 @@
         {
             "name": "Android Development",
             "value": 90,
-            "icon": "faAndroid"
+            "color": "#9FC037"
         },
         {
             "name": "Website Development",
-            "value": 75,
-            "icon": "faCode"
+            "value": 80,
+            "color": "#F7DF1E"
         },
         {
             "name": "REST API Design",
             "value": 85,
-            "icon": "faServer"
+            "color": "#9C31E9"
+        },
+        {
+            "name": "Scrum",
+            "value": 85,
+            "color": "#F05033"
         },
         {
             "name": "SQL",
             "value": 85,
-            "icon": "faDatabase"
+            "color": "#4479A1"
         }
     ],
     "technicalSkills": [
         {
-            "name": "JavaScript",
-            "color": "#F7DF1E"
+            "name": "Android",
+            "color": "#9FC037"
+        },
+        {
+            "name": "Kotlin",
+            "color": "#9C31E9"
         },
         {
             "name": "Java",
             "color": "Orange"
         },
         {
-            "name": "Perl",
-            "color": "#41446D"
+            "name": "Jira",
+            "color": "#0D64DA"
+        },
+        {
+            "name": "JavaScript",
+            "color": "#F7DF1E"
         },
         {
             "name": "SQL",
             "color": "#4479A1"
         },
         {
-            "name": "Android",
-            "color": "#9FC037"
-        },
-        {
             "name": "React",
             "color": "#61DBFB"
-        },
-        {
-            "name": "Redux",
-            "color": "#7749BD"
         },
         {
             "name": "Git",
             "color": "#F05033"
         },
         {
-            "name": "Firebase",
-            "color": "#F58410"
+            "name": "HTML5",
+            "color": "#E96228"
+        },
+        {
+            "name": "CSS",
+            "color": "#2861EE"
+        },
+        {
+            "name": "Perl",
+            "color": "#41446D"
         }
     ],
     "intercollegiateAthletics": {
@@ -161,14 +171,12 @@
             "Placed 6 th in the 100m Butterfly at 2015 FINA World Junior Swimming Championships"
         ]
     },
-    "leadershipActivities": [
-        {
-            "name": "Design, Develop, Deploy Organization (D3)",
-            "location": "The Ohio State University",
-            "city": "Columbus",
-            "state": "OH",
-            "date": "Fall 2019",
-            "description": "Collaboratively worked on a team to develop a platform that will change the way technical interviews work in the tech world."
-        }
-    ]
+    "leadership": {
+        "name": "Design, Develop, Deploy Organization (D3)",
+        "location": "The Ohio State University",
+        "city": "Columbus",
+        "state": "OH",
+        "date": "Fall 2019",
+        "description": "Collaboratively worked on a team to develop a platform that would change the way technical interviews work in the tech world."
+    }
 }

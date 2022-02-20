@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 const Skills = ({ skills }) => {
+    console.log('CALLED');
     return (
         <Fragment>
             {skills.map(skill => {
@@ -18,7 +19,10 @@ const Skills = ({ skills }) => {
                             <div className='bar'>
                                 <div
                                     className='bar-progress'
-                                    style={{ width: `${skill.value}%` }}
+                                    style={{
+                                        width: `${skill.value}%`,
+                                        backgroundColor: `${skill.color}`,
+                                    }}
                                 ></div>
                             </div>
                         </div>

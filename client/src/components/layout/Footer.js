@@ -3,10 +3,10 @@ import FadeIn from 'react-fade-in';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/fontawesome-free-solid';
 
-const Footer = ({ resumeData: { contact, socialMedia } }) => {
+const Footer = ({ resumeData: { name } }) => {
     return (
         <Fragment>
-            {contact !== null && socialMedia !== null ? (
+            {name !== null ? (
                 <footer>
                     <FadeIn bottom>
                         <section id='footer' className='section-container'>
@@ -21,12 +21,10 @@ const Footer = ({ resumeData: { contact, socialMedia } }) => {
                             <div className='social-container'>
                                 <div className='top-10'>
                                     <span className='barely-readable'>
-                                        &copy; 2021 by{' '}
+                                        &copy; 2022 by{' '}
                                     </span>
-                                    <span className='full-name'>
-                                        {contact.name}
-                                    </span>
-                                    . All rights reserved.
+                                    <span className='full-name'>{name}</span>.
+                                    All rights reserved.
                                 </div>
                             </div>
                         </section>

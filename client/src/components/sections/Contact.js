@@ -4,7 +4,6 @@ import resumeData from '../../assets/resume.json';
 import ColumbusPic from '../../assets/columbus_skyline_background.jpg';
 import { SiGithub } from 'react-icons/si';
 import { FaLinkedin } from 'react-icons/fa';
-import { FiPhoneCall } from 'react-icons/fi';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BiCurrentLocation } from 'react-icons/bi';
 
@@ -31,11 +30,6 @@ const Contact = () => {
                         size='2rem'
                         color={'white'}
                     />
-                );
-                break;
-            case 'phone':
-                icon = (
-                    <FiPhoneCall className='svg' size='2rem' color={'white'} />
                 );
                 break;
             case 'linkedin':
