@@ -93,23 +93,28 @@
     "developmentSkills": [
         {
             "name": "Android Development",
-            "value": 90
+            "value": 90,
+            "color": "#9FC037"
         },
         {
             "name": "Website Development",
-            "value": 80
+            "value": 80,
+            "color": "#F7DF1E"
         },
         {
             "name": "REST API Design",
-            "value": 85
+            "value": 85,
+            "color": "#9C31E9"
         },
         {
             "name": "Scrum",
-            "value": 85
+            "value": 85,
+            "color": "#F05033"
         },
         {
             "name": "SQL",
-            "value": 85
+            "value": 85,
+            "color": "#4479A1"
         }
     ],
     "technicalSkills": [
