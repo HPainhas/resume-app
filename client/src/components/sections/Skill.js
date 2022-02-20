@@ -20,18 +20,17 @@ const Skill = () => {
                                     <div className='text'>
                                         <p>
                                             Currently, I'm working as a Software
-                                            Engineer at eRetailing Associates,
-                                            soaking up as much knowledge and
-                                            practice as I can in an attempt to
-                                            get better at my role and advance in
-                                            my career. My main task on the
-                                            e-commerce team is to continue to
-                                            improve and maintain the in-house
-                                            Android application I developed,
-                                            which monitors all of our order
-                                            processing workflow, inventory
-                                            system, and receiving of goods,
-                                            among other activities.
+                                            Engineer at Toast, Inc., soaking up
+                                            as much knowledge and practice as I
+                                            can in an attempt to get better at
+                                            my role and advance in my career.
+                                            I'm a member of the Payments
+                                            Workflow team and I'm responsible
+                                            for implementing new features,
+                                            updating existing payment
+                                            functionalities, and fixing bugs
+                                            within the Toast point of sale (POS)
+                                            application.
                                         </p>
                                     </div>
                                 </div>

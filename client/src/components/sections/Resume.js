@@ -6,9 +6,9 @@ import {
     SiJavascript,
     SiMysql,
     SiReact,
-    SiRedux,
+    SiKotlin,
     SiGit,
-    SiFirebase,
+    SiJira,
 } from 'react-icons/si';
 import { DiAndroid } from 'react-icons/di';
 import { BiCodeAlt } from 'react-icons/bi';
@@ -297,9 +297,9 @@ const Resume = () => {
                                                                         />
                                                                     );
                                                                     break;
-                                                                case 'Redux':
+                                                                case 'Jira':
                                                                     icon = (
-                                                                        <SiRedux
+                                                                        <SiJira
                                                                             size='3rem'
                                                                             color={
                                                                                 skill.color
@@ -317,9 +317,9 @@ const Resume = () => {
                                                                         />
                                                                     );
                                                                     break;
-                                                                case 'Firebase':
+                                                                case 'Kotlin':
                                                                     icon = (
-                                                                        <SiFirebase
+                                                                        <SiKotlin
                                                                             size='3rem'
                                                                             color={
                                                                                 skill.color

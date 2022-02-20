@@ -1,6 +1,6 @@
 {
     "bioHeader": "Software Engineer based in Columbus, OH",
-    "bio": "I am an experienced Software Engineer and Android Developer, with previous experience as an athlete, and have a passion for innovation and a strong drive for continuous improvement in all of my endeavors. I have recently finished a course on data structure and algorithms and another on Android development, and I'm looking forward to applying what I have learned so far on my next projects.",
+    "bio": "I am an experienced Software Engineer and Android Developer, with previous experience as an athlete, and have a passion for innovation and a strong drive for continuous improvement in all of my endeavors. I am currently reading the book Clean Code by Robert C. Martin and I'm looking forward to applying what I have learned so far on my next projects.",
     "contact": [
         {
             "type": "email",
@@ -50,17 +50,22 @@
     },
     "workExperience": [
         {
+            "name": "Toast Inc.",
+            "position": "Software Engineer I",
+            "city": "(Remote)Columbus",
+            "state": "OH",
+            "country": "United States",
+            "start_end_date": "December 2021 - Present",
+            "description": "Member of the Payments Workflow team. Responsible for implementing new features, updating existing payment functionalities, and fixing bugs within the Toast point of sale (POS) application."
+        },
+        {
             "name": "eRetailing Associates",
-            "position": "Software Engineer / Android Engineer",
+            "position": "Software Engineer",
             "city": "Columbus",
             "state": "OH",
             "country": "United States",
-            "start_date": "May 2019",
-            "end_date": "",
-            "description": [
-                "Designed and developed an in-house Android application for the Zebra MC40 scanners using Java and Android Studio for the front-end, and Perl, SQL, and Firebase for the backend. The application uses different web transactions to help the production team with warehouse management tasks. These tasks involve: assign, locate, identify, pick, put away, receive, transfer, print, among others. The goal is to make the warehouse become paperless, the order workflow more efficient, and inventory 100% accurate.",
-                "Communicated directly with employees to gather requirements and to get feedback from the application, as well as their desired additional functionalities."
-            ]
+            "start_end_date": "May 2019 - December 2021",
+            "description": "Member of the e-commerce team which focuses on making the production team as efficient as possible in order to increase order throughput and inventory accuracy./n/nDesigned and implemented an Android application for the Zebra MC40 scanners. The FacilityApp mainly monitors all of our order processing workflow, handles inventory accuracy, and allows the production team to track and locate items with ease. The use of the FacilityApp made it easier for eRetailing to partner with Homage by streamlining the data between both companies and allowing our production team to handle the increase in workload. Therefore, helping increase the company's revenue."
         },
         {
             "name": "Vyra",
@@ -68,25 +73,22 @@
             "city": "Columbus",
             "state": "OH",
             "country": "United States",
-            "start_date": "January 2020",
-            "end_date": "Decembet 2020",
-            "description": [
-                "My friends and I attempted to innovate the interviewing process for software engineers. We used React JS for the front-end and Node JS, Express, MySQL, and AWS for the back-end to build a web application that allowed interviewers and interviewees to have a more realistic interview experience. The application included a built-in calendar, dashboard, candidate management tools (favorites, position, etc.), real-time screen share, real-time note-taking, among other features."
-            ]
+            "start_end_date": "January 2020 - December 2020",
+            "description": "My friends and I attempted to innovate the interviewing process for software engineers. We used React JS for the front-end and Node JS, Express, MySQL, and AWS for the back-end to build a web application that allowed interviewers and interviewees to have a more realistic interview experience. The application included a built-in calendar, dashboard, candidate management tools (favorites, position, etc.), real-time screen share, real-time note-taking, among other features."
         }
     ],
     "technicalProjects": [
         {
             "name": "Countries App",
-            "description": "Basic Android application that covers all the modern Android development patterns in Java. This includes: MVVM architecture, Lifecycle Extensions, Dagger2, RxJava, Retrofit, Glide, and some simple Unit Testing."
+            "description": "Basic Android application that covers all the modern Android development patterns in Java. This includes: MVVM architecture, Lifecycle Extensions, Dagger2, RxJava, Retrofit, Glide, and some unit testing."
         },
         {
-            "name": "DevConnector",
-            "description": "An in-depth full-stack social network application for developers. The tech stack I used includes Node.js, Express, React, Redux, and MongoDB along with ES6+."
+            "name": "DevSocializa",
+            "description": "An in-depth full-stack social network application for developers. The tech stack includes Node.js, Express, React, Redux, and MongoDB along with ES6+."
         },
         {
             "name": "Pokemon App",
-            "description": "Very very simple React Pokemon application using the latest features of React. It utilizes hooks for state and effects instead of classes, and also basic pagination."
+            "description": "Very simple React Pokemon application using the latest features of React. It utilizes hooks for state and effects instead of classes, and also basic pagination."
         },
         {
             "name": "Homeowner Buddy",
@@ -121,6 +123,10 @@
             "color": "#F7DF1E"
         },
         {
+            "name": "Kotlin",
+            "color": "#9C31E9"
+        },
+        {
             "name": "Java",
             "color": "Orange"
         },
@@ -141,16 +147,12 @@
             "color": "#61DBFB"
         },
         {
-            "name": "Redux",
-            "color": "#7749BD"
-        },
-        {
             "name": "Git",
             "color": "#F05033"
         },
         {
-            "name": "Firebase",
-            "color": "#F58410"
+            "name": "Jira",
+            "color": "#0D64DA"
         }
     ],
     "intercollegiateAthletics": {
