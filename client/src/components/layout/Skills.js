@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 
 const Skills = ({ skills }) => {
-    console.log('CALLED');
     return (
         <Fragment>
             {skills.map(skill => {

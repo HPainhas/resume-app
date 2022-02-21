@@ -23,13 +23,13 @@ const Projects = ({ repos }) => {
                         color = 'Orange';
                     }
 
-                    if (repository.name === 'DevSocializa')
+                    if (repository.name === 'dev-socializa-app')
                         imageSrc = DevSocializa;
-                    else if (repository.name === 'ResumeApp')
+                    else if (repository.name === 'resume-app')
                         imageSrc = ResumeApp;
-                    else if (repository.name === 'PokemonApp')
+                    else if (repository.name === 'pokemon-app')
                         imageSrc = PokemonApp;
-                    else if (repository.name === 'CountriesApp')
+                    else if (repository.name === 'countries-app')
                         imageSrc = CountriesApp;
 
                     return (
