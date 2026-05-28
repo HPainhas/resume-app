@@ -234,32 +234,6 @@ const Resume = () => {
                     </div>
                   </div>
                 </div>
-                <div className="row leadership">
-                  <div className="three columns header-col">
-                    <h1>
-                      <span>Leadership</span>
-                    </h1>
-                  </div>
-                  <div className="nine columns main-col">
-                    <div className="row item">
-                      <div className="twelve columns">
-                        <div>
-                          <h3>Design, Develop, Deploy (D3)</h3>
-                          <p className="job-title">
-                            The Ohio State University
-                            <span>•</span>
-                            <em className="date">Fall 2019</em>
-                          </p>
-                          <p className="job-info">
-                            Collaboratively worked on a team to develop a
-                            platform that will change the way technical
-                            interviews work in the tech world.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div className="row skill">
                   <div className="three columns header-col">
                     <h1>
