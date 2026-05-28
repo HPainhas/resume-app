@@ -18,7 +18,7 @@ import { BiCodeAlt } from "react-icons/bi";
 import resumeData from "../../assets/resume.json";
 import toastLogo from "../../assets/toast-logo.png";
 import eRetailingLogo from "../../assets/eretailing-logo.jpeg";
-import vyraLogo from "../../assets/topcheese-app-icon.png";
+import topcheeseLogo from "../../assets/topcheese-app-icon.png";
 import ohioStateUniversityLogo from "../../assets/ohio-state-university-logo.png";
 import trineUniversityLogo from "../../assets/trine-university-logo.jpeg";
 
@@ -104,32 +104,41 @@ const Resume = () => {
                             system; among other tasks.
                           </p>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row projects">
+                  <div className="three columns header-col">
+                    <h1>
+                      <span>Projects</span>
+                    </h1>
+                  </div>
+                  <div className="nine columns main-col">
+                    <div className="row item">
+                      <div className="twelve columns">
                         <div>
-                          <div className="job-title-mobile">
-                            <div className="header-div">
-                              <img src={vyraLogo} alt="Vyra logo"></img>
-                              <h3>Vyra</h3>
-                              <span>(tentative startup)</span>
-                            </div>
+                          <div className="header-div">
+                            <img src={topcheeseLogo} alt="TopCheese logo"></img>
+                            <h3>TopCheese</h3>
                           </div>
-                          <p className="job-title">
-                            Co-Founder
+                          <p className="project-title">
+                            Founder
                             <span>•</span>
-                            <em className="date">
-                              January 2020 - December 2020
-                            </em>
+                            <em className="date">March 2026 - Present</em>
                           </p>
-                          <p className="job-info">
-                            Let’s face it. Typical coding challenges and white
-                            board questions just aren’t cutting it anymore. We
-                            need tools that allow companies to assess candidates
-                            on skills that matter. Introducing Vyra. My two
-                            friends and I tried to build a startup that would
-                            allow tech companies to interview candidates through
-                            real work scenarios. The platform included a
-                            built-in calendar, dashboard, candidate management
-                            tools, real time screen sharing, real time note
-                            taking, among other features.
+                          <p className="project-info">
+                            TopCheese was built to make hockey stats feel alive.
+                            Instead of drowning fans in numbers, it presents
+                            real-time momentum, player heat levels, and scoring
+                            threats instantly and clearly. As both a hockey fan
+                            and a developer, I wanted better live stats at my
+                            fingertips—so I built TopCheese to do exactly that.
+                            The idea is simple: surface the stats that matter
+                            most in a visual, intuitive way—showing who's
+                            shooting, who's heating up, and who might score
+                            next—so you never miss the momentum building toward
+                            the next goal.
                           </p>
                         </div>
                       </div>
