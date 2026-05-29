@@ -36,10 +36,6 @@
       "color": "#1AA5F3"
     },
     {
-      "name": "Java",
-      "color": "Orange"
-    },
-    {
       "name": "Claude",
       "color": "#D97757"
     },
@@ -60,6 +56,14 @@
       "color": "#2480F7"
     },
     {
+      "name": "Railway",
+      "color": "#893FF2"
+    },
+    {
+      "name": "Redis",
+      "color": "#FF4438"
+    },
+    {
       "name": "React",
       "color": "#61DBFB"
     },
@@ -70,10 +74,6 @@
     {
       "name": "TypeScript",
       "color": "#3178C6"
-    },
-    {
-      "name": "Redis",
-      "color": "#FF4438"
     }
   ]
 }

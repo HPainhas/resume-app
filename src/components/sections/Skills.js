@@ -11,8 +11,8 @@ import {
   SiNodedotjs,
   SiRedis,
   SiClaude,
+  SiRailway,
 } from "react-icons/si";
-import { FaJava } from "react-icons/fa6";
 import { DiAndroid } from "react-icons/di";
 import { BiCodeAlt } from "react-icons/bi";
 import resumeData from "../../assets/resume.json";
@@ -26,7 +26,7 @@ const ICON_MAP = {
   Jenkins: SiJenkins,
   GitHub: SiGithub,
   Jira: SiJira,
-  Java: FaJava,
+  Railway: SiRailway,
   Android: DiAndroid,
   React: SiReact,
   Git: SiGit,
