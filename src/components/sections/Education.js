@@ -60,7 +60,7 @@ const Education = () => {
               </header>
 
               <div className="mb-4 flex flex-wrap items-center gap-x-3 gap-y-2">
-                <p className="text-[15px] font-medium text-neutral-200">
+                <p className="w-full text-[15px] font-medium text-neutral-200 sm:w-auto">
                   {edu.degree}
                 </p>
                 <Pill variant="subtle">{edu.date}</Pill>

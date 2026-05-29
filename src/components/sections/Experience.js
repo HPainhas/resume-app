@@ -114,7 +114,7 @@ const Experience = () => {
       id="experience"
       eyebrow="Experience"
       title="Where I've shipped."
-      description="Nearly five years building production software, mostly Android, mostly payments."
+      description="Shipping production software since 2019 — mostly Android, mostly payments."
     >
       <ol className="relative">
         {/* Vertical rail */}
