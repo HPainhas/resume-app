@@ -59,11 +59,11 @@ const TimelineEntry = ({ entry, index }) => {
 
       <Card interactive className="p-6 sm:p-8">
         <header className="mb-5 flex items-center gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/[0.08] bg-white">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl">
             <img
               src={entry.logo}
               alt={`${entry.company} logo`}
-              className="h-9 w-9 object-contain"
+              className="h-12 w-12 object-contain"
             />
           </div>
           <div>
