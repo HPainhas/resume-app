@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
  * No springs, no bounces — just an ease-out fade + 8px translate.
  *
  * When `stack` is true, each whitespace-separated word renders on its own
- * line so multi-word roles (e.g. "AI Enthusiast", "Very Curious") all get
+ * line so multi-word roles (e.g. "AI Enthusiast") all get
  * the same two-line layout regardless of width.
  */
 const RoleRotator = ({
