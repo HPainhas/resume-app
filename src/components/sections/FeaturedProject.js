@@ -65,8 +65,6 @@ const FeaturedProject = () => {
                 <div className="flex flex-wrap items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
                   <span>{project.role}</span>
                   <span aria-hidden="true">·</span>
-                  <span>{project.platform}</span>
-                  <span aria-hidden="true">·</span>
                   <span>{project.startDate} — Present</span>
                 </div>
               </div>
