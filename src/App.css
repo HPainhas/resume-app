@@ -654,63 +654,12 @@ img {
 }
 
 .skills .left {
-  width: 50%;
-  padding-right: 50px;
+  width: 100%;
 }
 
 .skills .text {
   padding-top: 27px;
   float: left;
-}
-
-.skills .right {
-  width: 50%;
-  padding-left: 50px;
-}
-
-.skill-progress {
-  width: 100%;
-  height: auto;
-  clear: both;
-  float: left;
-}
-
-.progress-inner {
-  width: 100%;
-  margin-bottom: 34px;
-}
-
-.progress-inner > span {
-  margin: 0 0 7px;
-  width: 100%;
-  display: block;
-  text-align: left;
-  font-weight: 500;
-  color: #333;
-}
-
-.progress-inner span.number {
-  float: right;
-}
-
-.progress-inner .background {
-  background: rgba(0, 0, 0, 0.05);
-  width: 100%;
-  min-width: 100%;
-  position: relative;
-  height: 4px;
-}
-
-.progress-inner .background .bar {
-  width: 100%;
-  height: 100%;
-}
-
-.progress-inner .background .bar-progress {
-  height: 100%;
-  background: #000;
-  width: 0;
-  overflow: hidden;
 }
 
 /* Resume Section */
@@ -1221,18 +1170,7 @@ a.github {
   }
 
   .skills .left {
-    padding-right: 0;
     width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .skills .right {
-    padding-left: 0;
-    width: 100%;
-  }
-
-  .skills .right .skill-progress {
-    padding-top: 40px;
   }
 
   /* Contact Section */

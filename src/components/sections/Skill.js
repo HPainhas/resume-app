@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import resumeData from "../../assets/resume.json";
-import Skills from "../layout/Skills";
 
 const Skill = () => {
   return (
@@ -31,11 +30,6 @@ const Skill = () => {
                       users, and it's been a fun way to keep sharpening my
                       skills.
                     </p>
-                  </div>
-                </div>
-                <div className="right">
-                  <div className="skill-progress">
-                    <Skills skills={resumeData.developmentSkills} />
                   </div>
                 </div>
               </div>

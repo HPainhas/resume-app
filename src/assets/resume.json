@@ -125,33 +125,6 @@
       "description": "A cross-platform mobile app which interacts directly with the web app. The mobile app allows Habitat Mid-Ohio homeowners to search for a tutorial video on how to solve a particular home issue they might have. My team and I used Xamarin Forms, REST architecture, and C# to implement the app."
     }
   ],
-  "developmentSkills": [
-    {
-      "name": "Android Development (Kotlin)",
-      "value": 100,
-      "icon": "faAndroid"
-    },
-    {
-      "name": "CI tools (Git, Jira, Jenkins, etc.)",
-      "value": 100,
-      "icon": "faGit"
-    },
-    {
-      "name": "Website Development (React)",
-      "value": 85,
-      "icon": "faCode"
-    },
-    {
-      "name": "REST API Design",
-      "value": 70,
-      "icon": "faServer"
-    },
-    {
-      "name": "MySQL",
-      "value": 60,
-      "icon": "faDatabase"
-    }
-  ],
   "technicalSkills": [
     {
       "name": "Android",
