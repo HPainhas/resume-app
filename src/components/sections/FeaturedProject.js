@@ -15,7 +15,7 @@ const FeaturedProject = () => {
 
   const stats = [
     { label: "120+ users", icon: Users },
-    { label: "Live on App Store", icon: SiApple },
+    { label: "Live on the App Store", icon: SiApple },
     { label: "Built with Cursor + Claude", icon: Sparkles },
   ];
 
@@ -85,47 +85,17 @@ const FeaturedProject = () => {
                 ))}
               </div>
 
-              {project.appStoreUrl || project.websiteUrl ? (
-                <div className="grid grid-cols-1 gap-3 sm:max-w-md sm:grid-cols-2">
-                  {project.appStoreUrl ? (
-                    <a
-                      href={project.appStoreUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="Download on the App Store"
-                      className="inline-flex h-14 w-full items-center justify-center gap-2.5 rounded-xl border border-white bg-black px-4 text-white transition-transform duration-200 hover:-translate-y-0.5"
-                    >
-                      <SiApple size={28} aria-hidden="true" />
-                      <span className="flex flex-col items-start leading-none">
-                        <span className="text-[10px] font-medium tracking-wide">
-                          Download on the
-                        </span>
-                        <span className="mt-0.5 text-[19px] font-semibold tracking-tight">
-                          App Store
-                        </span>
-                      </span>
-                    </a>
-                  ) : null}
-                  {project.websiteUrl ? (
-                    <a
-                      href={project.websiteUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="Visit the website"
-                      className="inline-flex h-14 w-full items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.03] px-4 text-white transition-colors hover:border-white/30 hover:bg-white/[0.06]"
-                    >
-                      <Globe size={26} strokeWidth={1.75} aria-hidden="true" />
-                      <span className="flex flex-col items-start leading-none">
-                        <span className="text-[10px] font-medium tracking-wide">
-                          Check out the
-                        </span>
-                        <span className="mt-0.5 text-[19px] font-semibold tracking-tight">
-                          Website
-                        </span>
-                      </span>
-                    </a>
-                  ) : null}
-                </div>
+              {project.websiteUrl ? (
+                <a
+                  href={project.websiteUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Visit the website"
+                  className="inline-flex items-center gap-2 self-start rounded-full border border-white/15 bg-white/[0.03] px-5 py-2.5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/[0.06]"
+                >
+                  <Globe size={16} strokeWidth={2} aria-hidden="true" />
+                  Visit website
+                </a>
               ) : null}
             </div>
           </div>
