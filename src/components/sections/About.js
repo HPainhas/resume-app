@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowDownToLine } from "lucide-react";
 import resumeData from "../../assets/resume.json";
 import HenriqueProfilePic from "../../assets/henrique.jpg";
 import Section from "../ui/Section";
@@ -32,23 +31,6 @@ const About = () => {
               <p className="text-base leading-relaxed text-neutral-300 sm:text-lg">
                 {resumeData.aboutBody}
               </p>
-
-              <div>
-                <a
-                  href="/henrique-painhas-resume.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  download
-                  className="group inline-flex h-11 items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-5 text-sm font-semibold text-white transition-colors hover:border-white/25 hover:bg-white/[0.06]"
-                >
-                  <ArrowDownToLine
-                    size={16}
-                    strokeWidth={2.25}
-                    className="transition-transform duration-200 group-hover:translate-y-0.5"
-                  />
-                  Download Resume
-                </a>
-              </div>
             </div>
           </div>
         </Card>
