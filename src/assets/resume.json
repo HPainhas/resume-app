@@ -1,6 +1,6 @@
 {
-  "bioHeader": "Software Engineer based in Scottsdale, AZ",
-  "bio": "I am an experienced Software Engineer and Android Developer, with previous experience as an athlete, and have a passion for innovation and a strong drive for continuous improvement in all of my endeavors.",
+  "aboutHeadline": "Shipping production software by day, building with AI on the side",
+  "aboutBody": "For nearly five years, I've been a Software Engineer at Toast, the all-in-1 restaurant POS company, on the Payments Experience team, where I build, maintain, and improve the payments workflow inside our POS app. The recent AI boom has also reshaped how I tinker outside of work: frustrated by how hard it was to follow NHL shots on goal live, I used Cursor and Claude Code to build TopCheese — an iOS app that tracks them in real time. It's now live on the App Store for free with more than 120 users, and it's been a fun way to keep sharpening my skills.",
   "contact": [
     {
       "type": "location",
@@ -17,114 +17,14 @@
       "url": "https://github.com/HPainhas"
     }
   ],
-  "githubUsername": "HPainhas",
-  "socialMedia": [
-    {
-      "name": "LinkedIn",
-      "url": "https://linkedin.com/in/henriquepainhas",
-      "classname": "linkedin social"
-    },
-    {
-      "name": "GitHub",
-      "url": "https://github.com/HPainhas",
-      "classname": "github social"
-    }
-  ],
-  "education": [
-    {
-      "college": "The Ohio State University",
-      "city": "Columbus",
-      "state": "OH",
-      "country": "United States",
-      "gpa": "3.28",
-      "major": "B.S. in Computer and Information Science",
-      "start_date": "August 2015",
-      "end_date": "May 2020"
-    },
-    {
-      "college": "Trine University",
-      "city": "Phoenix",
-      "state": "AZ",
-      "country": "United States",
-      "gpa": "4.00",
-      "major": "M.S. in Information Studies",
-      "start_date": "June 2023",
-      "end_date": "May 2024"
-    }
-  ],
-  "workExperience": [
-    {
-      "name": "Toast",
-      "position": "Software Engineer II",
-      "city": "Remote",
-      "state": "",
-      "country": "United States",
-      "start_date": "March 2024",
-      "end_date": "",
-      "description": [
-        "Android Engineer. Member of the Payments Experience team. Responsible for implementing new features, reducing complexity and ambiguity in the code through PRs and documentation, improving user experience, collaborating with other teams, writing Unit/Espresso tests, and fixing bugs within the Toast point of sale (POS) application."
-      ]
-    },
-    {
-      "name": "Toast",
-      "position": "Software Engineer I",
-      "city": "Remote",
-      "state": "",
-      "country": "United States",
-      "start_date": "December 2021",
-      "end_date": "March 2024",
-      "description": [
-        "Android Engineer. Member of the Payments Experience team. Responsible for implementing new features, updating existing payment functionalities, and fixing bugs within the Toast point of sale (POS) application."
-      ]
-    },
-    {
-      "name": "eRetailing",
-      "position": "Software Engineer / Android Engineer",
-      "city": "Columbus",
-      "state": "OH",
-      "country": "United States",
-      "start_date": "May 2019",
-      "end_date": "December 2021",
-      "description": [
-        "Designed and developed an in-house Android application for the Zebra MC40 scanners using Java and Android Studio for the front-end, and Perl, SQL, and Firebase for the backend. The application uses different web transactions to help the production team with warehouse management tasks. These tasks involve: assign, locate, identify, pick, put away, receive, transfer, print, among others. The goal is to make the warehouse become paperless, the order workflow more efficient, and inventory 100% accurate.",
-        "Communicated directly with employees to gather requirements and to get feedback from the application, as well as their desired additional functionalities."
-      ]
-    },
-    {
-      "name": "Vyra",
-      "position": "Co-Founder / CTO",
-      "city": "Columbus",
-      "state": "OH",
-      "country": "United States",
-      "start_date": "January 2020",
-      "end_date": "December 2020",
-      "description": [
-        "My friends and I attempted to innovate the interviewing process for software engineers. We used React JS for the front-end and Node JS, Express, MySQL, and AWS for the back-end to build a web application that allowed interviewers and interviewees to have a more realistic interview experience. The application included a built-in calendar, dashboard, candidate management tools (favorites, position, etc.), real-time screen share, real-time note-taking, among other features."
-      ]
-    }
-  ],
-  "technicalProjects": [
-    {
-      "name": "Resume App",
-      "description": "Why not have a website as a resume? Simple React JS app that includes some of the projects I have worked on (pulled directly from GitHub), a quick section about myself, and of course, my resume information."
-    },
-    {
-      "name": "Countries App",
-      "description": "Basic Android application that covers all the modern Android development patterns in Java. This includes: MVVM architecture, Lifecycle Extensions, Dagger2, RxJava, Retrofit, Glide, and some simple Unit Testing."
-    },
-    {
-      "name": "DevConnector",
-      "description": "An in-depth full-stack social network application for developers. The tech stack I used includes Node.js, Express, React, Redux, and MongoDB along with ES6+."
-    },
-    {
-      "name": "Pokemon App",
-      "description": "Very very simple React Pokemon application using the latest features of React. It utilizes hooks for state and effects instead of classes, and also basic pagination."
-    },
-    {
-      "name": "Homeowner Buddy",
-      "description": "A cross-platform mobile app which interacts directly with the web app. The mobile app allows Habitat Mid-Ohio homeowners to search for a tutorial video on how to solve a particular home issue they might have. My team and I used Xamarin Forms, REST architecture, and C# to implement the app."
-    }
-  ],
+  "featuredProject": {
+    "name": "TopCheese",
+    "role": "Founder",
+    "startDate": "March 2026",
+    "platform": "iOS (App Store)",
+    "description": "TopCheese was built to make hockey stats feel alive. Instead of drowning fans in numbers, it surfaces real-time momentum, player heat levels, and scoring threats instantly and clearly. As both a hockey fan and a developer, I wanted better live stats at my fingertips—so I built TopCheese to do exactly that. The idea is simple: surface the stats that matter most in a visual, intuitive way—showing who's shooting, who's heating up, and who might score next—so you never miss the momentum building toward the next goal. Built with Cursor and Claude Code, now live on the App Store with 120+ users and growing.",
+    "appStoreUrl": ""
+  },
   "technicalSkills": [
     {
       "name": "Android",
@@ -174,13 +74,5 @@
       "name": "Redis",
       "color": "#FF4438"
     }
-  ],
-  "intercollegiateAthletics": {
-    "name": "Ohio State University DI Varsity Men's Swimming and Diving Team",
-    "accolades": [
-      "2nd place at Men’s 100y Backstroke at 2019 Big Ten Men’s Swimming and Diving Championships",
-      "Recipient of the 2018 Ohio State University Swimming & Diving Carl Wirthwein Award (Most Improved Swimmer)",
-      "Placed 6 th in the 100m Butterfly at 2015 FINA World Junior Swimming Championships"
-    ]
-  }
+  ]
 }
