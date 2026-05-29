@@ -27,7 +27,7 @@ const About = () => {
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-ink-900/40 md:to-ink-900/80" />
             </div>
 
-            <div className="flex flex-col justify-center gap-6 p-8 sm:p-10 lg:p-12">
+            <div className="flex flex-col justify-center gap-6 px-0 py-8 md:p-10 lg:p-12">
               <p className="text-base leading-relaxed text-neutral-300 sm:text-lg">
                 {resumeData.aboutBody}
               </p>
