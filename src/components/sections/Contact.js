@@ -28,7 +28,7 @@ const Contact = () => {
       id="contact"
       eyebrow="Contact"
       title="Let's connect."
-      description="Open to chat about engineering, payments, hockey, or anything you're building."
+      description="Open to chat about engineering, AI, finance, hockey, or anything you're building."
       align="center"
     >
       <div className="mx-auto grid max-w-4xl gap-3 sm:grid-cols-3 sm:gap-4">
