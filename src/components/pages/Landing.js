@@ -61,7 +61,8 @@ const Hero = () => {
             transition={{ duration: 0.5, ease: EASE, delay: 0.15 }}
             className="mt-8 max-w-2xl text-lg leading-relaxed text-neutral-400 sm:text-xl"
           >
-            Production software by day. AI-built apps by night.
+            <span className="block sm:inline">Production software by day.</span>{" "}
+            <span className="block sm:inline">AI-built apps by night.</span>
           </motion.p>
 
           <motion.p
@@ -78,11 +79,11 @@ const Hero = () => {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: EASE, delay: 0.3 }}
-            className="mt-10 flex flex-wrap items-center gap-3"
+            className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center"
           >
             <a
               href="#experience"
-              className="group inline-flex h-11 min-w-[200px] items-center justify-center gap-2 rounded-full bg-white px-5 text-sm font-semibold text-ink-900 transition-transform duration-200 hover:-translate-y-0.5"
+              className="group inline-flex h-11 w-full items-center justify-center gap-2 rounded-full bg-white px-5 text-sm font-semibold text-ink-900 transition-transform duration-200 hover:-translate-y-0.5 sm:w-auto sm:min-w-[200px]"
             >
               View Experience
               <ArrowDown
@@ -96,7 +97,7 @@ const Hero = () => {
               target="_blank"
               rel="noreferrer"
               download
-              className="inline-flex h-11 min-w-[200px] items-center justify-center gap-2 rounded-full border border-white/10 bg-white/[0.02] px-5 text-sm font-semibold text-white transition-colors hover:border-white/25 hover:bg-white/[0.05]"
+              className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-full border border-white/10 bg-white/[0.02] px-5 text-sm font-semibold text-white transition-colors hover:border-white/25 hover:bg-white/[0.05] sm:w-auto sm:min-w-[200px]"
             >
               <Download size={16} strokeWidth={2.25} />
               Download Resume
