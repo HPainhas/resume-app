@@ -23,7 +23,7 @@ const About = () => {
               <img
                 src={HenriqueProfilePic}
                 alt="Henrique Painhas"
-                className="absolute inset-0 h-full w-full object-cover"
+                className="absolute inset-0 h-full w-full object-cover object-top"
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-ink-900/40 md:to-ink-900/80" />
             </div>

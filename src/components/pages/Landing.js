@@ -118,7 +118,7 @@ const Hero = () => {
                 <img
                   src={HenriqueProfilePic}
                   alt="Henrique Painhas"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-top"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-ink-900/60 via-transparent to-transparent" />
               </div>
