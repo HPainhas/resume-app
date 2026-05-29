@@ -81,7 +81,7 @@ const Hero = () => {
             >
               <a
                 href="#experience"
-                className="group inline-flex h-11 items-center gap-2 rounded-full bg-white px-5 text-sm font-semibold text-ink-900 transition-transform duration-200 hover:-translate-y-0.5"
+                className="group inline-flex h-11 min-w-[200px] items-center justify-center gap-2 rounded-full bg-white px-5 text-sm font-semibold text-ink-900 transition-transform duration-200 hover:-translate-y-0.5"
               >
                 View Experience
                 <ArrowDown
@@ -95,7 +95,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noreferrer"
                 download
-                className="inline-flex h-11 items-center gap-2 rounded-full border border-white/10 bg-white/[0.02] px-5 text-sm font-semibold text-white transition-colors hover:border-white/25 hover:bg-white/[0.05]"
+                className="inline-flex h-11 min-w-[200px] items-center justify-center gap-2 rounded-full border border-white/10 bg-white/[0.02] px-5 text-sm font-semibold text-white transition-colors hover:border-white/25 hover:bg-white/[0.05]"
               >
                 <Download size={16} strokeWidth={2.25} />
                 Download Resume
