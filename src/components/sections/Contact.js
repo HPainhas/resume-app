@@ -4,6 +4,7 @@ import { SiGithub } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { MapPin, ExternalLink } from "lucide-react";
 import resumeData from "../../assets/resume.json";
+import { isSafeHttpUrl } from "../../utils/url";
 import Section from "../ui/Section";
 
 const EASE = [0.22, 1, 0.36, 1];
@@ -34,11 +35,11 @@ const Contact = () => {
       <div className="mx-auto grid max-w-4xl gap-3 sm:grid-cols-3 sm:gap-4">
         {items.map((info, i) => {
           const Icon = ICONS[info.type] || ExternalLink;
-          const isLink = Boolean(info.url);
+          const isLink = isSafeHttpUrl(info.url);
           const Tag = isLink ? "a" : "div";
 
           const linkProps = isLink
-            ? { href: info.url, target: "_blank", rel: "noreferrer" }
+            ? { href: info.url, target: "_blank", rel: "noopener noreferrer" }
             : {};
 
           return (

@@ -4,6 +4,7 @@ import { Globe, Sparkles, Users } from "lucide-react";
 import { SiApple } from "react-icons/si";
 import resumeData from "../../assets/resume.json";
 import topcheeseLogo from "../../assets/topcheese-app-icon.png";
+import { isSafeHttpUrl } from "../../utils/url";
 import Section from "../ui/Section";
 import Pill from "../ui/Pill";
 
@@ -85,11 +86,11 @@ const FeaturedProject = () => {
                 ))}
               </div>
 
-              {project.websiteUrl ? (
+              {isSafeHttpUrl(project.websiteUrl) ? (
                 <a
                   href={project.websiteUrl}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   aria-label="Visit the website"
                   className="inline-flex items-center gap-2 self-start rounded-full border border-white/15 bg-white/[0.03] px-5 py-2.5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/[0.06]"
                 >

@@ -95,7 +95,7 @@ const Hero = () => {
             <a
               href="/henrique-painhas-resume.pdf"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               download
               className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-full border border-white/10 bg-white/[0.02] px-5 text-sm font-semibold text-white transition-colors hover:border-white/25 hover:bg-white/[0.05] sm:w-auto sm:min-w-[200px]"
             >

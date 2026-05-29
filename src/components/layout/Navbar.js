@@ -88,7 +88,7 @@ const Navbar = () => {
         <a
           href="/henrique-painhas-resume.pdf"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           download
           className="inline-flex h-9 items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.03] px-4 text-[13px] font-medium text-white transition-colors hover:border-white/20 hover:bg-white/[0.06]"
         >

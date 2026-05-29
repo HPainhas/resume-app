@@ -3,10 +3,16 @@ import { ChevronUp } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import resumeData from "../../assets/resume.json";
+import { isSafeHttpUrl } from "../../utils/url";
 
 const Footer = () => {
-  const linkedin = resumeData.contact?.find((c) => c.type === "linkedin");
-  const github = resumeData.contact?.find((c) => c.type === "github");
+  const findContact = (type) => {
+    const entry = resumeData.contact?.find((c) => c.type === type);
+    return entry && isSafeHttpUrl(entry.url) ? entry : null;
+  };
+
+  const linkedin = findContact("linkedin");
+  const github = findContact("github");
 
   return (
     <footer className="relative border-t border-white/[0.06] bg-ink-900">
@@ -32,7 +38,7 @@ const Footer = () => {
             <a
               href={linkedin.url}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.02] text-neutral-300 transition-colors hover:border-white/20 hover:text-white"
             >
@@ -43,7 +49,7 @@ const Footer = () => {
             <a
               href={github.url}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="GitHub"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.02] text-neutral-300 transition-colors hover:border-white/20 hover:text-white"
             >
