@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Apple, ExternalLink, Sparkles, Users } from "lucide-react";
+import { Globe, Sparkles, Users } from "lucide-react";
+import { SiApple } from "react-icons/si";
 import resumeData from "../../assets/resume.json";
 import topcheeseLogo from "../../assets/topcheese-app-icon.png";
 import Section from "../ui/Section";
@@ -14,7 +15,7 @@ const FeaturedProject = () => {
 
   const stats = [
     { label: "120+ users", icon: Users },
-    { label: "Live on App Store", icon: Apple },
+    { label: "Live on App Store", icon: SiApple },
     { label: "Built with Cursor + Claude", icon: Sparkles },
   ];
 
@@ -84,21 +85,46 @@ const FeaturedProject = () => {
                 ))}
               </div>
 
-              {project.appStoreUrl ? (
-                <div>
-                  <a
-                    href={project.appStoreUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="group inline-flex h-11 items-center gap-2 rounded-full bg-white px-5 text-sm font-semibold text-ink-900 transition-transform duration-200 hover:-translate-y-0.5"
-                  >
-                    View on the App Store
-                    <ExternalLink
-                      size={16}
-                      strokeWidth={2.25}
-                      className="transition-transform duration-200 group-hover:translate-x-0.5"
-                    />
-                  </a>
+              {project.appStoreUrl || project.websiteUrl ? (
+                <div className="grid grid-cols-1 gap-3 sm:max-w-md sm:grid-cols-2">
+                  {project.appStoreUrl ? (
+                    <a
+                      href={project.appStoreUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="Download on the App Store"
+                      className="inline-flex h-14 w-full items-center justify-center gap-2.5 rounded-xl border border-white bg-black px-4 text-white transition-transform duration-200 hover:-translate-y-0.5"
+                    >
+                      <SiApple size={28} aria-hidden="true" />
+                      <span className="flex flex-col items-start leading-none">
+                        <span className="text-[10px] font-medium tracking-wide">
+                          Download on the
+                        </span>
+                        <span className="mt-0.5 text-[19px] font-semibold tracking-tight">
+                          App Store
+                        </span>
+                      </span>
+                    </a>
+                  ) : null}
+                  {project.websiteUrl ? (
+                    <a
+                      href={project.websiteUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="Visit the website"
+                      className="inline-flex h-14 w-full items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.03] px-4 text-white transition-colors hover:border-white/30 hover:bg-white/[0.06]"
+                    >
+                      <Globe size={26} strokeWidth={1.75} aria-hidden="true" />
+                      <span className="flex flex-col items-start leading-none">
+                        <span className="text-[10px] font-medium tracking-wide">
+                          Check out the
+                        </span>
+                        <span className="mt-0.5 text-[19px] font-semibold tracking-tight">
+                          Website
+                        </span>
+                      </span>
+                    </a>
+                  ) : null}
                 </div>
               ) : null}
             </div>
