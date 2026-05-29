@@ -11,7 +11,7 @@ import Skills from "../sections/Skills";
 import Education from "../sections/Education";
 import Contact from "../sections/Contact";
 
-const ROLES = ["Software Engineer", "Android Developer", "AI Entusiast"];
+const ROLES = ["Software Engineer", "Android Developer", "AI Enthusiast"];
 
 const location =
   resumeData.contact?.find((c) => c.type === "location")?.value ||
