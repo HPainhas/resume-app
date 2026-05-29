@@ -21,7 +21,7 @@
     "name": "TopCheese",
     "role": "Founder",
     "startDate": "March 2026",
-    "platform": "iOS (App Store)",
+    "platform": "iOS",
     "description": "TopCheese was built to make hockey stats feel alive. Instead of drowning fans in numbers, it surfaces real-time momentum, player heat levels, and scoring threats instantly and clearly. As both a hockey fan and a developer, I wanted better live stats at my fingertips—so I built TopCheese to do exactly that. The idea is simple: surface the stats that matter most in a visual, intuitive way—showing who's shooting, who's heating up, and who might score next—so you never miss the momentum building toward the next goal. Built with Cursor and Claude Code, now live on the App Store with 120+ users and growing.",
     "appStoreUrl": ""
   },
