@@ -126,6 +126,8 @@ const Resume = () => {
                             Founder
                             <span>•</span>
                             <em className="date">March 2026 - Present</em>
+                            <span>•</span>
+                            iOS (App Store)
                           </p>
                           <p className="project-info">
                             TopCheese was built to make hockey stats feel alive.

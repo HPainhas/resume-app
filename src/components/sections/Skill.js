@@ -3,52 +3,48 @@ import resumeData from "../../assets/resume.json";
 import Skills from "../layout/Skills";
 
 const Skill = () => {
-	return (
-		<Fragment>
-			{resumeData !== null ? (
-				<section id="skill" className="section-container">
-					<div className="skills">
-						<div className="container">
-							<div className="skills-inner">
-								<div className="left">
-									<div className="title">
-										<h3>
-											I have high skills in developing and
-											programming
-										</h3>
-									</div>
-									<div className="text">
-										<p>
-											Currently, I'm working as a Software
-											Engineer at Toast, the all-in-1
-											restaurant POS software company,
-											soaking up as much knowledge and
-											practice as I can in an attempt to
-											get better at my role and advance in
-											my career. My main task on the
-											payments experience team is to
-											continue to improve, maintain, and
-											contribute to the payments workflow
-											in our POS app.
-										</p>
-									</div>
-								</div>
-								<div className="right">
-									<div className="skill-progress">
-										<Skills
-											skills={
-												resumeData.developmentSkills
-											}
-										/>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			) : null}
-		</Fragment>
-	);
+  return (
+    <Fragment>
+      {resumeData !== null ? (
+        <section id="skill" className="section-container">
+          <div className="skills">
+            <div className="container">
+              <div className="skills-inner">
+                <div className="left">
+                  <div className="title">
+                    <h3>
+                      Shipping production software by day, building with AI on
+                      the side
+                    </h3>
+                  </div>
+                  <div className="text">
+                    <p>
+                      For nearly five years, I've been a Software Engineer at
+                      Toast, the all-in-1 restaurant POS company, on the
+                      Payments Experience team, where I build, maintain, and
+                      improve the payments workflow inside our POS app. The
+                      recent AI boom has also reshaped how I tinker outside of
+                      work: frustrated by how hard it was to follow NHL shots on
+                      goal live, I used Cursor and Claude Code to build
+                      TopCheese — an iOS app that tracks them in real time. It's
+                      now live on the App Store for free with more than 120
+                      users, and it's been a fun way to keep sharpening my
+                      skills.
+                    </p>
+                  </div>
+                </div>
+                <div className="right">
+                  <div className="skill-progress">
+                    <Skills skills={resumeData.developmentSkills} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
+    </Fragment>
+  );
 };
 
 export default Skill;
