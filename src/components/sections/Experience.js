@@ -54,8 +54,11 @@ const TimelineEntry = ({ entry, index }) => {
       transition={{ duration: 0.45, ease: EASE, delay: 0.05 + index * 0.05 }}
       className="relative pl-10 sm:pl-14"
     >
-      {/* Rail dot */}
-      <span className="absolute left-[10px] top-7 z-10 h-3 w-3 rounded-full border-2 border-ink-900 bg-accent sm:left-[18px]" />
+      {/* Rail marker: halo + dot, sharing the same anchor */}
+      <span className="absolute left-4 top-7 z-10 -translate-x-1/2 sm:left-6">
+        <span className="absolute left-1/2 top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/20" />
+        <span className="relative block h-3.5 w-3.5 rounded-full border-2 border-ink-900 bg-accent" />
+      </span>
 
       <Card interactive className="p-6 sm:p-8">
         <header className="mb-5 flex items-center gap-4">
@@ -115,7 +118,7 @@ const Experience = () => {
     >
       <ol className="relative">
         {/* Vertical rail */}
-        <span className="absolute left-[15px] top-2 bottom-2 w-px bg-gradient-to-b from-white/15 via-white/[0.06] to-transparent sm:left-[23px]" />
+        <span className="absolute left-4 top-2 bottom-2 w-px -translate-x-1/2 bg-gradient-to-b from-white/15 via-white/[0.06] to-transparent sm:left-6" />
 
         <div className="space-y-8">
           {EXPERIENCE.map((entry, index) => (
