@@ -154,6 +154,10 @@
   ],
   "technicalSkills": [
     {
+      "name": "Android",
+      "color": "#9FC037"
+    },
+    {
       "name": "Kotlin",
       "color": "#1AA5F3"
     },
@@ -162,44 +166,40 @@
       "color": "Orange"
     },
     {
-      "name": "Android",
-      "color": "#9FC037"
-    },
-    {
-      "name": "GitHub",
-      "color": "#000000"
+      "name": "Claude",
+      "color": "#D97757"
     },
     {
       "name": "Git",
       "color": "#F05033"
     },
     {
-      "name": "Jira",
-      "color": "#2480F7"
+      "name": "GitHub",
+      "color": "#000000"
     },
     {
       "name": "Jenkins",
       "color": "#325060"
     },
     {
-      "name": "Figma",
-      "color": "#9C56F6"
-    },
-    {
-      "name": "JavaScript",
-      "color": "#F7DF1E"
+      "name": "Jira",
+      "color": "#2480F7"
     },
     {
       "name": "React",
       "color": "#61DBFB"
     },
     {
-      "name": "SQL",
-      "color": "#4479A1"
+      "name": "Node.js",
+      "color": "#5FA04E"
     },
     {
-      "name": "Firebase",
-      "color": "#F58410"
+      "name": "TypeScript",
+      "color": "#3178C6"
+    },
+    {
+      "name": "Redis",
+      "color": "#FF4438"
     }
   ],
   "intercollegiateAthletics": {

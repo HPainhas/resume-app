@@ -1,16 +1,16 @@
 import React, { Fragment } from "react";
 import Tooltip from "@mui/material/Tooltip";
 import {
-  SiJavascript,
-  SiMysql,
   SiReact,
   SiGit,
-  SiFirebase,
   SiKotlin,
-  SiFigma,
   SiJenkins,
   SiJira,
   SiGithub,
+  SiTypescript,
+  SiNodedotjs,
+  SiRedis,
+  SiClaude,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
 import { DiAndroid } from "react-icons/di";
@@ -253,11 +253,6 @@ const Resume = () => {
                                   <SiKotlin size="3rem" color={skill.color} />
                                 );
                                 break;
-                              case "Figma":
-                                icon = (
-                                  <SiFigma size="3rem" color={skill.color} />
-                                );
-                                break;
                               case "Jenkins":
                                 icon = (
                                   <SiJenkins size="3rem" color={skill.color} />
@@ -273,22 +268,9 @@ const Resume = () => {
                                   <SiJira size="3rem" color={skill.color} />
                                 );
                                 break;
-                              case "JavaScript":
-                                icon = (
-                                  <SiJavascript
-                                    size="3rem"
-                                    color={skill.color}
-                                  />
-                                );
-                                break;
                               case "Java":
                                 icon = (
                                   <FaJava size="3rem" color={skill.color} />
-                                );
-                                break;
-                              case "SQL":
-                                icon = (
-                                  <SiMysql size="3rem" color={skill.color} />
                                 );
                                 break;
                               case "Android":
@@ -306,9 +288,30 @@ const Resume = () => {
                                   <SiGit size="3rem" color={skill.color} />
                                 );
                                 break;
-                              case "Firebase":
+                              case "TypeScript":
                                 icon = (
-                                  <SiFirebase size="3rem" color={skill.color} />
+                                  <SiTypescript
+                                    size="3rem"
+                                    color={skill.color}
+                                  />
+                                );
+                                break;
+                              case "Node.js":
+                                icon = (
+                                  <SiNodedotjs
+                                    size="3rem"
+                                    color={skill.color}
+                                  />
+                                );
+                                break;
+                              case "Redis":
+                                icon = (
+                                  <SiRedis size="3rem" color={skill.color} />
+                                );
+                                break;
+                              case "Claude":
+                                icon = (
+                                  <SiClaude size="3rem" color={skill.color} />
                                 );
                                 break;
                               default:
