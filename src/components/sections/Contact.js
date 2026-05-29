@@ -1,98 +1,90 @@
-import React, { Fragment } from "react";
-import SimpleModal from "../layout/SimpleModal";
-import resumeData from "../../assets/resume.json";
-import ColumbusPic from "../../assets/belo-horizonte-skyline.jpg";
+import React from "react";
+import { motion } from "framer-motion";
 import { SiGithub } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
-import { BiCurrentLocation } from "react-icons/bi";
+import { MapPin, ExternalLink } from "lucide-react";
+import resumeData from "../../assets/resume.json";
+import Section from "../ui/Section";
 
-const contact = resumeData.contact;
+const EASE = [0.22, 1, 0.36, 1];
+
+const ICONS = {
+  linkedin: FaLinkedin,
+  github: SiGithub,
+  location: MapPin,
+};
+
+const TYPE_LABELS = {
+  linkedin: "LinkedIn",
+  github: "GitHub",
+  location: "Location",
+};
 
 const Contact = () => {
-	const contactDisplay = contact.map((info) => {
-		let icon = null;
+  const items = resumeData.contact || [];
 
-		switch (info.type) {
-			case "location":
-				icon = (
-					<BiCurrentLocation
-						className="svg"
-						size="2rem"
-						color={"white"}
-					/>
-				);
-				break;
-			case "linkedin":
-				icon = (
-					<a href={info.url} target="_blank">
-						<FaLinkedin
-							className="svg"
-							size="2rem"
-							color={"white"}
-						/>
-					</a>
-				);
-				break;
-			case "github":
-				icon = (
-					<a href={info.url} target="_blank">
-						<SiGithub className="svg" size="2rem" color={"white"} />
-					</a>
-				);
-				break;
-			default:
-				icon = null;
-				break;
-		}
+  return (
+    <Section
+      id="contact"
+      eyebrow="Contact"
+      title="Let's connect."
+      description="Open to chat about engineering, payments, hockey, or anything you're building."
+      align="center"
+    >
+      <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-3">
+        {items.map((info, i) => {
+          const Icon = ICONS[info.type] || ExternalLink;
+          const isLink = Boolean(info.url);
+          const Tag = isLink ? "a" : "div";
 
-		return (
-			<li key={info.value}>
-				<div className="contact-info-inner">
-					{icon}
-					<p>{info.value}</p>
-				</div>
-			</li>
-		);
-	});
+          const linkProps = isLink
+            ? { href: info.url, target: "_blank", rel: "noreferrer" }
+            : {};
 
-	return (
-		<Fragment>
-			{contact !== null ? (
-				<section id="contact" className="section-container">
-					<div
-						className="contact big-image"
-						style={{
-							backgroundImage: `url(${ColumbusPic})`,
-						}}
-					>
-						<div className="shape">
-							<img
-								className="svg"
-								src="http://shanereact.ibthemespro.com/img/svg/paper.svg"
-								alt="paper shape"
-							/>
-						</div>
-						<div id="talk" className="background"></div>
-						<div className="contact-inner">
-							<div className="text" data-aos="zoom-in">
-								<h3>Let's connect!</h3>
-							</div>
-							<div data-aos="fade-up">
-								<SimpleModal buttonLabel="Contact Me">
-									<div className="contact-modal">
-										<h2>Get in touch</h2>
-										<div className="contact-info">
-											<ul>{contactDisplay}</ul>
-										</div>
-									</div>
-								</SimpleModal>
-							</div>
-						</div>
-					</div>
-				</section>
-			) : null}
-		</Fragment>
-	);
+          return (
+            <motion.div
+              key={info.type}
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.4, ease: EASE, delay: i * 0.07 }}
+            >
+              <Tag
+                {...linkProps}
+                className={`group flex h-full flex-col items-start gap-3 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 transition-all duration-300 ${
+                  isLink
+                    ? "hover:-translate-y-0.5 hover:border-white/15 hover:bg-white/[0.04]"
+                    : ""
+                }`}
+              >
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/[0.08] bg-white/[0.03] text-white">
+                  <Icon size={18} />
+                </div>
+                <div>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-500">
+                    {TYPE_LABELS[info.type] || info.type}
+                  </p>
+                  <p className="mt-1 text-base font-medium text-white">
+                    {info.value}
+                  </p>
+                </div>
+                {isLink && (
+                  <span className="mt-auto inline-flex items-center gap-1 text-[12px] font-medium text-neutral-400 transition-colors group-hover:text-accent-soft">
+                    Open
+                    <ExternalLink
+                      size={12}
+                      strokeWidth={2.25}
+                      className="transition-transform duration-200 group-hover:translate-x-0.5"
+                    />
+                  </span>
+                )}
+              </Tag>
+            </motion.div>
+          );
+        })}
+      </div>
+    </Section>
+  );
 };
 
 export default Contact;

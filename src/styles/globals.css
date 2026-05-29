@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-ink-900 text-neutral-300 font-sans antialiased;
+    font-feature-settings: "cv11", "ss01", "ss03";
+  }
+
+  ::selection {
+    background-color: rgba(59, 130, 246, 0.25);
+    color: #ffffff;
+  }
+
+  /* Subtle scrollbar to match the dark surface */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-6 sm:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-400;
+  }
+
+  .eyebrow::before {
+    content: "";
+    @apply h-px w-6 bg-white/15;
+  }
+
+  .glass-card {
+    @apply rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Decorative gradient ring used around the profile photo */
+  .gradient-ring {
+    background: conic-gradient(
+      from 140deg,
+      rgba(59, 130, 246, 0.55),
+      rgba(168, 85, 247, 0.35),
+      rgba(59, 130, 246, 0) 60%,
+      rgba(59, 130, 246, 0.55)
+    );
+  }
+}
+
+@layer utilities {
+  /* Reduced motion: kill all heavy transitions / transforms */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
