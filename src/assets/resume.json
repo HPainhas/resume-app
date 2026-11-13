@@ -1,10 +1,10 @@
 {
   "aboutHeadline": "Shipping production software by day, building with AI on the side",
-  "aboutBody": "For nearly five years, I've been a Software Engineer at Toast, the all-in-1 restaurant POS company, on the Payments Experience team, where I build, maintain, and improve the payments workflow inside our POS app. The recent AI boom has also reshaped how I tinker outside of work: frustrated by how hard it was to follow NHL shots on goal live, I used Cursor and Claude Code to build TopCheese — an iOS app that tracks them in real time. It's now live on the App Store for free with more than 120 users, and it's been a fun way to keep sharpening my skills.",
+  "aboutBody": "For nearly five years, I've been a Software Engineer at Toast, the all-in-1 restaurant POS company, on the Payments Experience team, where I build, maintain, and improve the payments workflow inside our POS app. The recent AI boom has also reshaped how I tinker outside of work: frustrated by how hard it was to follow NHL shots on goal live, I used Cursor and Claude Code to build TopCheese — an iOS app that tracks them in real time. It's now live on the App Store for free, and it's been a fun way to keep sharpening my skills.",
   "contact": [
     {
       "type": "location",
-      "value": "Scottsdale, AZ - USA"
+      "value": "Arizona - USA"
     },
     {
       "type": "linkedin",
@@ -22,7 +22,7 @@
     "role": "Founder",
     "startDate": "March 2026",
     "platform": "iOS",
-    "description": "TopCheese was built to make hockey stats feel alive. Instead of drowning fans in numbers, it surfaces real-time momentum, player heat levels, and scoring threats instantly and clearly. As both a hockey fan and a developer, I wanted better live stats at my fingertips—so I built TopCheese to do exactly that. The idea is simple: surface the stats that matter most in a visual, intuitive way—showing who's shooting, who's heating up, and who might score next—so you never miss the momentum building toward the next goal. Built with Cursor and Claude Code, now live on the App Store with 120+ users and growing.",
+    "description": "TopCheese was built to make hockey stats feel alive. Instead of drowning fans in numbers, it surfaces real-time momentum, player heat levels, and scoring threats instantly and clearly. As both a hockey fan and a developer, I wanted better live stats at my fingertips, so I built TopCheese to do exactly that. The idea is simple: surface the stats that matter most in a visual, intuitive way, showing who's shooting, who's heating up, and who might score next, so you never miss the momentum building toward the next goal. Solo-built with Cursor and Claude Code, and now live on the App Store.",
     "websiteUrl": "https://topcheeseapp.com/",
     "appStoreUrl": "https://apps.apple.com/us/app/topcheese/id6756594694"
   },
@@ -33,35 +33,11 @@
     },
     {
       "name": "Kotlin",
-      "color": "#1AA5F3"
+      "color": "#7F52FF"
     },
     {
-      "name": "Claude",
-      "color": "#D97757"
-    },
-    {
-      "name": "Git",
-      "color": "#F05033"
-    },
-    {
-      "name": "GitHub",
-      "color": "#000000"
-    },
-    {
-      "name": "Jenkins",
-      "color": "#325060"
-    },
-    {
-      "name": "Jira",
-      "color": "#2480F7"
-    },
-    {
-      "name": "Railway",
-      "color": "#893FF2"
-    },
-    {
-      "name": "Redis",
-      "color": "#FF4438"
+      "name": "Jetpack Compose",
+      "color": "#4082EC"
     },
     {
       "name": "React",
@@ -72,8 +48,32 @@
       "color": "#5FA04E"
     },
     {
-      "name": "TypeScript",
-      "color": "#3178C6"
+      "name": "App Store",
+      "color": "#189FEF"
+    },
+    {
+      "name": "Postgres",
+      "color": "#336791"
+    },
+    {
+      "name": "Redis",
+      "color": "#FF4438"
+    },
+    {
+      "name": "Railway",
+      "color": "#59497A"
+    },
+    {
+      "name": "PostHog",
+      "color": "#F54D01"
+    },
+    {
+      "name": "Git",
+      "color": "#EE5429"
+    },
+    {
+      "name": "Cursor",
+      "color": "#000000"
     }
   ]
 }

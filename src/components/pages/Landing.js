@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Download, MapPin } from "lucide-react";
 import resumeData from "../../assets/resume.json";
@@ -15,7 +14,7 @@ const ROLES = ["Software Engineer", "Android Developer", "AI Enthusiast"];
 
 const location =
   resumeData.contact?.find((c) => c.type === "location")?.value ||
-  "Scottsdale, AZ — USA";
+  "Arizona — USA";
 
 const EASE = [0.22, 1, 0.36, 1];
 

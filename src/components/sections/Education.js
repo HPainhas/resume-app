@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import ohioStateUniversityLogo from "../../assets/ohio-state-university-logo.png";
 import trineUniversityLogo from "../../assets/trine-university-logo.jpeg";

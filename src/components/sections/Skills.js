@@ -1,17 +1,16 @@
-import React from "react";
 import { motion } from "framer-motion";
 import {
   SiReact,
-  SiGit,
   SiKotlin,
-  SiJenkins,
-  SiJira,
-  SiGithub,
-  SiTypescript,
+  SiGit,
+  SiCursor,
   SiNodedotjs,
   SiRedis,
-  SiClaude,
+  SiPostgresql,
   SiRailway,
+  SiPosthog,
+  SiAppstore,
+  SiJetpackcompose,
 } from "react-icons/si";
 import { DiAndroid } from "react-icons/di";
 import { BiCodeAlt } from "react-icons/bi";
@@ -23,17 +22,17 @@ const EASE = [0.22, 1, 0.36, 1];
 
 const ICON_MAP = {
   Kotlin: SiKotlin,
-  Jenkins: SiJenkins,
-  GitHub: SiGithub,
-  Jira: SiJira,
+  Git: SiGit,
   Railway: SiRailway,
   Android: DiAndroid,
   React: SiReact,
-  Git: SiGit,
-  TypeScript: SiTypescript,
+  Cursor: SiCursor,
   "Node.js": SiNodedotjs,
   Redis: SiRedis,
-  Claude: SiClaude,
+  Postgres: SiPostgresql,
+  PostHog: SiPosthog,
+  "App Store": SiAppstore,
+  "Jetpack Compose": SiJetpackcompose,
 };
 
 const Skills = () => {

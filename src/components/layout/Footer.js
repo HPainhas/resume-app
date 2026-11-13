@@ -1,4 +1,3 @@
-import React from "react";
 import { ChevronUp } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";

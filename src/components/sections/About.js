@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import resumeData from "../../assets/resume.json";
 import HenriqueProfilePic from "../../assets/henrique.jpg";

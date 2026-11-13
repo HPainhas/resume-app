@@ -1,4 +1,3 @@
-import React from "react";
 
 /**
  * Pure-CSS decorative backdrop for the hero.

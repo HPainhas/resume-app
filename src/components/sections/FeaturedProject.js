@@ -1,6 +1,12 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { Globe, Sparkles, Users } from "lucide-react";
+import {
+  Activity,
+  Globe,
+  Globe2,
+  RefreshCw,
+  Smartphone,
+  Star,
+} from "lucide-react";
 import { SiApple } from "react-icons/si";
 import resumeData from "../../assets/resume.json";
 import topcheeseLogo from "../../assets/topcheese-app-icon.png";
@@ -15,9 +21,12 @@ const FeaturedProject = () => {
   if (!project) return null;
 
   const stats = [
-    { label: "120+ users", icon: Users },
-    { label: "Live on the App Store", icon: SiApple },
-    { label: "Built with Cursor + Claude", icon: Sparkles },
+    { label: "Over 60% week-1 retention", icon: RefreshCw },
+    { label: "Over 40% DAU/MAU stickiness", icon: Activity },
+    { label: "Over 70% of users watch games live", icon: Smartphone },
+    { label: "5.0 App Store rating", icon: Star },
+    { label: "Users in 6+ countries", icon: Globe2 },
+    { label: "Solo-built, live on the App Store", icon: SiApple },
   ];
 
   return (

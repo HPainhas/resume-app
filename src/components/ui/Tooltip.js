@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Tooltip = ({ label, children, className = "" }) => {
   const [open, setOpen] = useState(false);
